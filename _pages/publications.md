@@ -9,8 +9,6 @@ author_profile: true
 
 You can also find my articles on my [Google Scholar](https://scholar.google.cl/citations?user=1klIiDgAAAAJ&hl=es&oi=ao) profile.
 
-# Publications
-
 ## Peer reviewed journal articles 
 
 1. **Busch, P.**, Chen, Y., Ogbonna, P., Kendall, A. (2025). Effects of Demand and Recycling on the When and Where of Lithium Extraction. *Nature Sustainability*. https://doi.org/10.1038/s41893-025-01561-5
