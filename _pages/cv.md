@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-View my full CV [here](files/Resume_Busch.pdf) (as of May 2025).
+View my full CV [here](../files/Resume_Busch.pdf) (as of May 2025).
 
 Education
 ======
