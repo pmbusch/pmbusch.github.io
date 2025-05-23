@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Research"
+title: "Current Research"
 permalink: /research/
 ---
 
