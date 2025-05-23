@@ -6,8 +6,6 @@ permalink: /research/
 
 {% include base_path %}
 
-# Research Interests
-
 * Energy Transition Minerals Demand & Supply Modeling
 * Air Quality Health Impacts
 * Industrial Decarbonization
