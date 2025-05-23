@@ -6,9 +6,12 @@ permalink: /research/
 
 {% include base_path %}
 
+I am interested on the following research topics:
+
 * Energy Transition Minerals Demand & Supply Modeling
 * Air Quality Health Impacts
 * Industrial Decarbonization
+* Sustainability
 * Data Science
 
 ## Under Review
