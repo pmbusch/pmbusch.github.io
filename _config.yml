@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "PhD Candidate in Energy Systems at UC Davis, with a background in Industrial & Environmental Engineering and M.Sc. in Statistics"
   location         : "Davis, CA"
-  employer         : "University of California, Davis"
+  employer         : #"University of California, Davis"
   uri              : # URL
   email            : "pmbuschh@gmail.com" 
 
@@ -46,7 +46,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "pmbusch"
+  github           : #"pmbusch"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -62,7 +62,7 @@ author:
   lastfm           : # Username
   linkedin         : "pmbusch"
   mastodon         : # URL
-  medium           : "https://medium.com/@pmbuschh"
+  medium           : #"https://medium.com/@pmbuschh"
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
