@@ -22,10 +22,10 @@ repository               : "pmbusch/pmbusch.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "avatar.jpg"
   name             : "Pablo Busch"
   pronouns         : # example: "she/her"  
-  bio              : "Pablo Busch is a PhD Candidate in Energy Systems at UC Davis, with a background in Industrial & Environmental Engineering and M.Sc. in Statistics"
+  bio              : "PhD Candidate in Energy Systems at UC Davis, with a background in Industrial & Environmental Engineering and M.Sc. in Statistics"
   location         : "Davis, CA"
   employer         : "University of California, Davis"
   uri              : # URL
@@ -62,7 +62,7 @@ author:
   lastfm           : # Username
   linkedin         : "pmbusch"
   mastodon         : # URL
-  medium           : "pmbuschh"
+  medium           : "@pmbuschh"
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
