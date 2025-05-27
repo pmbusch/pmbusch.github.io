@@ -21,7 +21,12 @@ Education
   
 Skills
 ======
-* Programming Languages: R (expert), Python (Proficient), SQL (Proficient), Latex (Proficient), VBA (Proficient), JavaScript (Basic), HTML/CSS (Basic)
+* Programming Languages: R (expert), Python (Proficient), Julia (Proficient), SQL (Proficient), Latex (Proficient), VBA (Proficient), JavaScript (Basic), HTML/CSS (Basic)
 * Software: Microsoft Office, QGis, Stata, Tableau, Analytica
 * Languages: Spanish (native), English (proficient), German (intermediate)
+
+Public Engagement and Service
+======
+* Committee Member ENAMI Chile - Chilean Committee for new Technologies for Lithium Extraction (2024)
+* Research Scholar - Resources for the Future Critical Minerals Research Lab (2024-2025)
 
