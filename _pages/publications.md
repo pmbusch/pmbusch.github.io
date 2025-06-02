@@ -20,6 +20,7 @@ You can also find my articles on my [Google Scholar](https://scholar.google.cl/c
 7. Busch, P.; Kendall, A., Lipman, T. (2023). **A systematic review of life cycle greenhouse gas intensity values for hydrogen production pathways**. *Renewable and Sustainable Energy Reviews*. 184. [https://doi.org/10.1016/j.rser.2023.113588](https://doi.org/10.1016/j.rser.2023.113588)
 8. Busch, P.; Cifuentes, L.A., Cabrera, C. (2023). **Chronic exposure to fine particles (PM2.5) and mortality: Evidence from Chile**. *Environmental Epidemiology*. e253. [http://dx.doi.org/10.1097/EE9.0000000000000253](http://dx.doi.org/10.1097/EE9.0000000000000253)
 9. Busch, P.; Kendall, A., Murphy, C.W., Miller, S.A. (2022). **Literature review on policies to mitigate GHG emissions for cement and concrete**. *Resources, Conservation and Recycling*. 182. [https://doi.org/10.1016/j.resconrec.2022.106278](https://doi.org/10.1016/j.resconrec.2022.106278)
+    - This article got the 2024 Most Downloaded Paper Awards from the journal [Resources, Conservation and Recycling](https://www.sciencedirect.com/journal/resources-conservation-and-recycling/about/news/resources-conservation-recycling-2024-most-downloaded-paper-awards).
 
 ## Reports & Policy Briefs
 
