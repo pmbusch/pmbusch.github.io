@@ -31,7 +31,6 @@ Public Engagement and Service
 * Research Scholar - Resources for the Future Critical Minerals Research Lab (2024-2025)
 
   
+       
   
-  
-
-Last website update: 06/2025
+*Last website update: 06/2025*
