@@ -30,3 +30,8 @@ Public Engagement and Service
 * Committee Member ENAMI Chile - Chilean Committee for new Technologies for Lithium Extraction (2024)
 * Research Scholar - Resources for the Future Critical Minerals Research Lab (2024-2025)
 
+  
+  
+  
+
+Last website update: 06/2025
