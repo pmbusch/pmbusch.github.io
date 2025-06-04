@@ -15,8 +15,7 @@ You can also find my articles on my [Google Scholar](https://scholar.google.cl/c
 1. **Busch, P.**, Chen, Y., Ogbonna, P., Kendall, A. (2025). **Effects of Demand and Recycling on the When and Where of Lithium Extraction**. *Nature Sustainability*. [https://doi.org/10.1038/s41893-025-01561-5](https://doi.org/10.1038/s41893-025-01561-5)
 2. **Busch, P.**, Kim, A., Miller, S.A., Murphy, C.W. (2025). **Policy mechanisms to decarbonize cement production: through the lens of California**. *Environmental Research: Infrastructure and Sustainability*. [https://doi.org/10.1088/2634-4505/adbc1a](https://doi.org/10.1088/2634-4505/adbc1a)
 
-**2024**
-
+**2024**<br><br>
 3. Pares, F., **Busch, P.**, Chandra, M., Tal, G. (2024). **Shifting Manufacturing: Electric Vehicle Supply Strategy using the Model for International EV Trade**. *Journal of Cleaner Production*, 144357. [https://doi.org/10.1016/j.jclepro.2024.144357](https://doi.org/10.1016/j.jclepro.2024.144357)
 4. **Busch, P.**, Rocha, P., Lee, K., Cifuentes, L., Tai, X. (2024). **Short-term exposure to fine particulate pollution and elderly mortality in Chile**. *Communications Earth & Environment*. 5:469. [https://doi.org/10.1038/s43247-024-01634-x](https://doi.org/10.1038/s43247-024-01634-x)
 5. **Busch, P.**, Pares, F., Chandra, M., Kendall, A., Tal, G. (2024). **Future of Global Electric Vehicle Supply Chain: Exploring the Impact of Global Trade on Electric Vehicle Production and Battery Requirements**. *Transportation Research Record*. [https://doi.org/10.1177/03611981241244797](https://doi.org/10.1177/03611981241244797)
