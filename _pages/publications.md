@@ -18,13 +18,13 @@ You can also find my articles on my [Google Scholar](https://scholar.google.cl/c
 **2024**
 
 * Pares, F., **Busch, P.**, Chandra, M., Tal, G. (2024). **Shifting Manufacturing: Electric Vehicle Supply Strategy using the Model for International EV Trade**. *Journal of Cleaner Production*, 144357. [https://doi.org/10.1016/j.jclepro.2024.144357](https://doi.org/10.1016/j.jclepro.2024.144357)
-* **Busch, P.**, Rocha, P., Lee, K., Cifuentes, L., Tai, X. (2024). **Short-term exposure to fine particulate pollution and elderly mortality in Chile**. *Communications Earth & Environment*. 5:469. [https://doi.org/10.1038/s43247-024-01634-x](https://doi.org/10.1038/s43247-024-01634-x)
-* **Busch, P.**, Pares, F., Chandra, M., Kendall, A., Tal, G. (2024). **Future of Global Electric Vehicle Supply Chain: Exploring the Impact of Global Trade on Electric Vehicle Production and Battery Requirements**. *Transportation Research Record*. [https://doi.org/10.1177/03611981241244797](https://doi.org/10.1177/03611981241244797)
+* **Busch, P.**, Rocha, P., Lee, K., Cifuentes, L., Tai, X. (2024). **Short-term exposure to fine particulate pollution and elderly mortality in Chile**. *Communications Earth & Environment*,  5(1), 469. [https://doi.org/10.1038/s43247-024-01634-x](https://doi.org/10.1038/s43247-024-01634-x)
+* **Busch, P.**, Pares, F., Chandra, M., Kendall, A., Tal, G. (2024). **Future of Global Electric Vehicle Supply Chain: Exploring the Impact of Global Trade on Electric Vehicle Production and Battery Requirements**. *Transportation Research Record*, 2678(11), 1468-1482. [https://doi.org/10.1177/03611981241244797](https://doi.org/10.1177/03611981241244797)
 * Brandao, M., **Busch, P.**, & Kendall, A. (2024). **Life cycle assessment, quo vadis? Supporting or deterring greenwashing? A survey of practitioners**. *Environmental Science: Advances*. 3(2), 266-273. [https://pubs.rsc.org/en/content/articlelanding/2024/va/d3va00317e](https://pubs.rsc.org/en/content/articlelanding/2024/va/d3va00317e)
 
 **2023**
 
-* **Busch, P.**; Kendall, A., Lipman, T. (2023). **A systematic review of life cycle greenhouse gas intensity values for hydrogen production pathways**. *Renewable and Sustainable Energy Reviews*. 184. [https://doi.org/10.1016/j.rser.2023.113588](https://doi.org/10.1016/j.rser.2023.113588)
+* **Busch, P.**; Kendall, A., Lipman, T. (2023). **A systematic review of life cycle greenhouse gas intensity values for hydrogen production pathways**. *Renewable and Sustainable Energy Reviews, 184*, 113588. [https://doi.org/10.1016/j.rser.2023.113588](https://doi.org/10.1016/j.rser.2023.113588)
 * **Busch, P.**; Cifuentes, L.A., Cabrera, C. (2023). **Chronic exposure to fine particles (PM2.5) and mortality: Evidence from Chile**. *Environmental Epidemiology*. e253. [http://dx.doi.org/10.1097/EE9.0000000000000253](http://dx.doi.org/10.1097/EE9.0000000000000253)
 
 **2022**
