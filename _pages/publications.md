@@ -12,8 +12,8 @@ You can also find my articles on my [Google Scholar](https://scholar.google.cl/c
 ## Peer reviewed journal articles 
 
 **2025**
-* **Busch, P.**, Chen, Y., Ogbonna, P., Kendall, A. (2025). **Effects of Demand and Recycling on the When and Where of Lithium Extraction**. *Nature Sustainability*. [https://doi.org/10.1038/s41893-025-01561-5](https://doi.org/10.1038/s41893-025-01561-5)
-* **Busch, P.**, Kim, A., Miller, S.A., Murphy, C.W. (2025). **Policy mechanisms to decarbonize cement production: through the lens of California**. *Environmental Research: Infrastructure and Sustainability*. [https://doi.org/10.1088/2634-4505/adbc1a](https://doi.org/10.1088/2634-4505/adbc1a)
+* **Busch, P.**, Chen, Y., Ogbonna, P., Kendall, A. (2025). **Effects of Demand and Recycling on the When and Where of Lithium Extraction**. *Nature Sustainability*, 1-11. [https://doi.org/10.1038/s41893-025-01561-5](https://doi.org/10.1038/s41893-025-01561-5)
+* **Busch, P.**, Kim, A., Miller, S.A., Murphy, C.W. (2025). **Policy mechanisms to decarbonize cement production: through the lens of California**. *Environmental Research: Infrastructure and Sustainability*, 5(2), 025003. [https://doi.org/10.1088/2634-4505/adbc1a](https://doi.org/10.1088/2634-4505/adbc1a)
 
 **2024**
 
