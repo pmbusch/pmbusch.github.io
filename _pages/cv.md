@@ -13,7 +13,7 @@ View my full CV [here](../files/Resume_Busch.pdf) (as of May 2025).
 
 Education
 ======
-* Ph.D in Energy Systems, University of California Davis, 2025 (expected)
+* Ph.D in Energy Systems, University of California Davis, 2025
 * M.Sc. in Statistics, University of California Davis, 2022
 * M.Sc. in Environmental Policy & Management, University of California Davis, 2022
 * Civil Engineer of Industry, Diploma in Environmental Engineering, Pontificia Universidad Catolica de Chile, 2016
