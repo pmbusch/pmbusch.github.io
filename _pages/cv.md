@@ -13,10 +13,11 @@ View my full CV [here](../files/Resume_Busch.pdf) (as of May 2025).
 
 Education
 ======
-* Ph.D in Energy Systems, University of California Davis, 2025
-* M.Sc. in Statistics, University of California Davis, 2022
-* M.Sc. in Environmental Policy & Management, University of California Davis, 2022
-* Civil Engineer of Industry, Diploma in Environmental Engineering, Pontificia Universidad Catolica de Chile, 2016
+* Postdoctoral Scholar Earth System Science, Stanford, 2025
+* Ph.D in Energy Systems, University of California Davis, 2023-2025
+* M.Sc. in Statistics, University of California Davis, 2021-2022
+* M.Sc. in Environmental Policy & Management, University of California Davis, 2020-2022
+* Civil Engineer of Industry, Diploma in Environmental Engineering, Pontificia Universidad Catolica de Chile, 2011-2016
 
   
 Skills
@@ -28,9 +29,7 @@ Skills
 Public Engagement and Service
 ======
 * Committee Member ENAMI Chile - Chilean Committee for new Technologies for Lithium Extraction (2024)
-* Research Scholar - Resources for the Future Critical Minerals Research Lab (2024-2025)
+* Research Scholar - Resources for the Future [Critical Minerals Research Lab](https://www.rff.org/topics/transportation/critical-minerals/critical-minerals-research-lab/) (2024-2025)
 
-  
-       
   
 *Last website update: 06/2025*
