@@ -8,11 +8,11 @@ permalink: /research/
 
 I am interested on the following research topics:
 
-* Energy Transition Minerals Demand & Supply Modeling
-* Air Quality Health Impacts
-* Industrial Decarbonization
 * Sustainability
-* Data Science
+* Energy Transition Minerals Demand & Supply Modeling
+* Industrial Decarbonization
+* Air Quality Health Impacts
+* Data Science 
 
 ## Research Methods and Toolkit
 
