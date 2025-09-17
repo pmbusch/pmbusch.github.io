@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am Pablo Busch, a **Postdoctoral Scholar** at the [Sustainable Solutions Lab](https://sustainablesolutions.stanford.edu/) at the [Stanford Doerr School of Sustainability] (https://sustainability.stanford.edu/). I am an **interdisciplinary researcher** with training in industrial and environmental engineering, public policy, energy systems, industrial ecology, and statistics. My research focuses on scientific analyses to support a **clean energy transition**, and to help identify risks to equity and sustainability in the emerging energy transition **mineral supply chain**. 
+Hello! I am Pablo Busch, a **Postdoctoral Scholar** at the [Sustainable Solutions Lab](https://sustainablesolutions.stanford.edu/) at the [Stanford Doerr School of Sustainability](https://sustainability.stanford.edu/). I am an **interdisciplinary researcher** with training in industrial and environmental engineering, public policy, energy systems, industrial ecology, and statistics. My research focuses on scientific analyses to support a **clean energy transition**, and to help identify risks to equity and sustainability in the emerging energy transition **mineral supply chain**. 
 
 My main PhD work on lithium demand and supply was recently published on [*Nature Sustainability*](https://doi.org/10.1038/s41893-025-01561-5). In this article we quantify the required lithium supply chain expansion in form of mine openings or expansions to meet different lithium demand scenarios, showcasing the benefits of reducing lithium-ion battery size and circular economy policies in preventing mine openings worldwide.
 
