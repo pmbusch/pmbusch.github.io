@@ -13,6 +13,7 @@ You can also find my articles on my [Google Scholar](https://scholar.google.cl/c
 
 **2025**
 * **Busch, P.**, Chen, Y., Ogbonna, P., Kendall, A. (2025). **Effects of Demand and Recycling on the When and Where of Lithium Extraction**. *Nature Sustainability*, 1-11. [https://doi.org/10.1038/s41893-025-01561-5](https://doi.org/10.1038/s41893-025-01561-5)
+* **Busch, P.**, Pares, F.,  Tal, G., Kendall, A. (2025). **Who Will Have Enough? Battery Mineral Demand and Sufficiency in Vehicle Producing Countries**. *Environmental Science & Technology*, . [https://doi.org/10.1021/acs.est.5c12420](https://doi.org/10.1021/acs.est.5c12420)
 * Santero, N., Nelson, L., Chen, Y., Meredith, M., **Busch, P.**, Kendall, A. (2025). **Beyond the Tailpipe: Market-Wide Analysis of All US Vehicles Shows the Climate Benefits of Electrification.** [*preprint.*](https://www.researchsquare.com/article/rs-6762195/v1) 
 * Chandra, M., **Busch, P.**, Pares, F., Tal, G. (2025). **Paths of progress: Forecasting global electric vehicle demand amidst demographic and economic growth**. *Transportation Research Part D: Transport and Environment*, 147, 104928. [https://doi.org/10.1016/j.trd.2025.104928](https://doi.org/10.1016/j.trd.2025.104928)
 * **Busch, P.**, Kim, A., Miller, S.A., Murphy, C.W. (2025). **Policy mechanisms to decarbonize cement production: through the lens of California**. *Environmental Research: Infrastructure and Sustainability*, 5(2), 025003. [https://doi.org/10.1088/2634-4505/adbc1a](https://doi.org/10.1088/2634-4505/adbc1a)
