@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-View my full CV [here](../files/Resume_Busch.pdf) (as of May 2025).
+View my full CV [here](../files/Resume_Busch.pdf) (as of January 2026).
 
 Education
 ======
@@ -32,4 +32,4 @@ Public Engagement and Service
 * Research Scholar - Resources for the Future [Critical Minerals Research Lab](https://www.rff.org/topics/transportation/critical-minerals/critical-minerals-research-lab/) (2024-2025)
 
   
-*Last website update: 06/2025*
+*Last website update: 01/2026*
