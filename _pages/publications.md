@@ -13,6 +13,7 @@ You can also find my articles on my [Google Scholar](https://scholar.google.cl/c
 
 **2026**
 * Santero, N., Nelson, L., Chen, Y., Meredith, M., **Busch, P.**, Kendall, A. (2026). **Electrifying light vehicles in the United States shows emission reduction potential for all vehicle types and powertrains.** [*Communications Sustainability*](https://www.researchsquare.com/article/rs-6762195/v1) 
+* Duex, S., **Busch, P.**, Kendall, A. (2026). **The electric vehicle transition: effects on copper supply dynamics in a net-zero future.** *Resources, Conservation and Recycling*.
 
 **2025**
 * **Busch, P.**, Chen, Y., Ogbonna, P., Kendall, A. (2025). **Effects of Demand and Recycling on the When and Where of Lithium Extraction**. *Nature Sustainability*, 1-11. [https://doi.org/10.1038/s41893-025-01561-5](https://doi.org/10.1038/s41893-025-01561-5)
