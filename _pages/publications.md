@@ -12,7 +12,7 @@ You can also find my articles on my [Google Scholar](https://scholar.google.cl/c
 ## Peer reviewed journal articles 
 
 **2026**
-* Santero, N., Nelson, L., Chen, Y., Meredith, M., **Busch, P.**, Kendall, A. (2026). **Electrifying light vehicles in the United States shows emission reduction potential for all vehicle types and powertrains.** [*Communications Sustainability*](https://www.researchsquare.com/article/rs-6762195/v1) 
+* Santero, N., Nelson, L., Chen, Y., Meredith, M., **Busch, P.**, Kendall, A. (2026). **Electrifying light vehicles in the United States shows emission reduction potential for all vehicle types and powertrains.** *Communications Sustainability*.[https://doi.org/10.1038/s44458-025-00032-4](https://doi.org/10.1038/s44458-025-00032-4)
 * Duex, S., **Busch, P.**, Kendall, A. (2026). **The electric vehicle transition: effects on copper supply dynamics in a net-zero future.** *Resources, Conservation and Recycling*, 228, 108798. [https://doi.org/10.1016/j.resconrec.2026.108798](https://doi.org/10.1016/j.resconrec.2026.108798)
 
 **2025**
