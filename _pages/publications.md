@@ -40,6 +40,9 @@ You can also find my articles on my [Google Scholar](https://scholar.google.cl/c
 
 ## Reports & Policy Briefs
 
+**2026**
+* **Busch, P.**, Pares, F., Kendall, A., Sulwe, C. (2026). **Batteries Without Borders: Trade, Circularity, and the Future of Critical Mineral Security**. *Majority Mobility - Issue 2.* [https://doi.org/10.7922/G2CZ35K6](https://doi.org/10.7922/G2CZ35K6)
+
 **2024**
 * Pares, F., & **Busch, P.** (2024). **Renewable Energy and Energy Storage Value Chains in Latin America and the Caribbean**. *Inter-American Development Bank*. [http://dx.doi.org/10.18235/0013197](http://dx.doi.org/10.18235/0013197)
 * Lipman, T., **Busch, P.**, Collins, S., Horvath, A., Kendall, A., Coffee, D., & Kong, D. (2024). **Moving Beyond the Colors: The Full Life-Cycle Emissions of Hydrogen Production Pathways for California**. *UC Office of the President: University of California Institute of Transportation Studies*. [https://doi.org/10.7922/G26Q1VKR](https://doi.org/10.7922/G26Q1VKR)
