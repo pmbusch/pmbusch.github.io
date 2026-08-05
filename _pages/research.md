@@ -9,8 +9,9 @@ permalink: /research/
 I am interested on the following research topics:
 
 * Sustainability
+* Circular Economy
 * Energy Transition Minerals Demand & Supply Modeling
-* Industrial Decarbonization
+* Industrial Ecology
 * Air Quality Health Impacts
 * Data Science 
 
