@@ -11,7 +11,7 @@ You can also find my articles on my [Google Scholar](https://scholar.google.cl/c
 
 ## Peer reviewed journal articles 
 
-Google Scholar: h-index = 8, citations = 466
+Google Scholar: h-index = 9, citations = 497
 
 **2026**
 * **Busch, P.**, Chen, Y. & Kendall, A. (2026). **Life cycle performance and carbon handprint of lithium-ion batteries in electric vehicles**. *Journal of Industrial Ecology*. [https://doi.org/10.1007/s44498-026-00112-1](https://doi.org/10.1007/s44498-026-00112-1).
