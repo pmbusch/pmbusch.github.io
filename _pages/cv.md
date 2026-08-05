@@ -13,7 +13,7 @@ View my full CV [here](../files/Resume_Busch.pdf) (as of January 2026).
 
 Education
 ======
-* Postdoctoral Scholar Earth System Science, Stanford, 2025
+* Postdoctoral Scholar Earth System Science, Stanford, 2025-2026
 * Ph.D in Energy Systems, University of California Davis, 2023-2025
 * M.Sc. in Statistics, University of California Davis, 2021-2022
 * M.Sc. in Environmental Policy & Management, University of California Davis, 2020-2022
