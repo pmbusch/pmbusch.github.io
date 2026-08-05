@@ -25,8 +25,8 @@ author:
   avatar           : "avatar.jpg"
   name             : "Pablo Busch"
   pronouns         : # example: "she/her"  
-  bio              : "Postdoctoral Scholar, Stanford<br>PhD Energy Systems, UC Davis<br>M.Sc. Statistics, UC Davis<br>M.Sc. Env. Policy, UC Davis<br>Industrial Engineer, PUC Chile"
-  location         : "Stanford, CA"
+  bio              : "Assistant Professor - PUC, Chile<br>PhD Energy Systems, UC Davis<br>M.Sc. Statistics, UC Davis<br>M.Sc. Env. Policy, UC Davis<br>Industrial Engineer, PUC Chile"
+  location         : "Santiago, Chile"
   employer         : #"University of California, Davis"
   uri              : # URL
   email            : "pmbuschh@gmail.com" 
