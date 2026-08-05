@@ -7,9 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am Pablo Busch, a **Postdoctoral Scholar** at the [Sustainable Solutions Lab](https://sustainablesolutions.stanford.edu/) at the [Stanford Doerr School of Sustainability](https://sustainability.stanford.edu/), where I am also part of the [STEER initiative](https://steer.stanford.edu/). 
+Hello! I am Pablo Busch, an **Assistant Professor** at [Civil Engineering](https://www.ing.uc.cl/ingenieria-y-gestion-construccion/) and at the [Institute for Sustainable Development](https://desarrollosustentable.uc.cl/) at the Pontificia Universidad Católica de Chile. Previously I was a **Postdoctoral Scholar** at the [Sustainable Solutions Lab](https://sustainablesolutions.stanford.edu/) at the [Stanford Doerr School of Sustainability](https://sustainability.stanford.edu/).
 
 I am an **interdisciplinary researcher** with training in industrial and environmental engineering, public policy, energy systems, industrial ecology, and statistics. My research focuses on scientific analyses to support a **clean energy transition**, and to help identify risks to equity and sustainability in the emerging energy transition **mineral supply chain**. 
+
+<mark>I am actively recruiting students or PostDocs to join my group to work at interdisciplinary research on circular economy, materials, energy systems, air quality and sustainability. I am seeking highly motivated people to work on quantitative models to provide qualitative recommendations towards sustainable progress. If interested, I would love to hear from you! </mark>
 
 My main PhD work on **energy transition minerals (ETMs)** demand and supply is published on [*Nature Sustainability*](https://doi.org/10.1038/s41893-025-01561-5) and on [*Environmental Science & Technology*](https://doi.org/10.1021/acs.est.5c12420). In the first article we quantify the required lithium supply chain expansion in form of mine openings or expansions to meet different lithium demand scenarios, showcasing the benefits of reducing lithium-ion battery size and circular economy policies in preventing mine openings worldwide. In the second article we expand our scope to include other battery minerals (lithium, nickel, cobalt and graphite), and quantify the mineral reserve gap in vehicle producing countries and potential of circular economy policies by considering the mineral leakage in used vehicle trade.
 
