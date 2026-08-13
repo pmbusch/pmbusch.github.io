@@ -11,11 +11,12 @@ You can also find my articles on my [Google Scholar](https://scholar.google.cl/c
 
 ## Peer reviewed journal articles 
 
-Google Scholar: h-index = 9, citations = 500
+Google Scholar: h-index = 9, citations = 501
 
 **2026**
+* **Busch, P.**, Dunn, J., Pares, F., Ramji, A. & Kendall, A. (2026). **Future battery recycling in North America: Capacity expansion under shifting demand and circularity strategies**. *Resources, Conservation and Recycling, 235*, 109118. [https://doi.org/10.1016/j.resconrec.2026.109118](https://doi.org/10.1016/j.resconrec.2026.109118).
 * **Busch, P.**, Chen, Y. & Kendall, A. (2026). **Life cycle performance and carbon handprint of lithium-ion batteries in electric vehicles**. *Journal of Industrial Ecology*. [https://doi.org/10.1007/s44498-026-00112-1](https://doi.org/10.1007/s44498-026-00112-1).
-* Santero, N., Nelson, L., Chen, Y., Meredith, M., **Busch, P.**, Kendall, A. (2026). **Electrifying light vehicles in the United States shows emission reduction potential for all vehicle types and powertrains.** *Communications Sustainability*.[https://doi.org/10.1038/s44458-025-00032-4](https://doi.org/10.1038/s44458-025-00032-4)
+* Santero, N., Nelson, L., Chen, Y., Meredith, M., **Busch, P.**, Kendall, A. (2026). **Electrifying light vehicles in the United States shows emission reduction potential for all vehicle types and powertrains.** *Communications Sustainability*, 1, 23. [https://doi.org/10.1038/s44458-025-00032-4](https://doi.org/10.1038/s44458-025-00032-4)
 * Duex, S., **Busch, P.**, Kendall, A. (2026). **The electric vehicle transition: effects on copper supply dynamics in a net-zero future.** *Resources, Conservation and Recycling*, 228, 108798. [https://doi.org/10.1016/j.resconrec.2026.108798](https://doi.org/10.1016/j.resconrec.2026.108798)
 
 **2025**
