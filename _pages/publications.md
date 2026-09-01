@@ -11,7 +11,7 @@ You can also find my articles on my [Google Scholar](https://scholar.google.cl/c
 
 ## Peer reviewed journal articles 
 
-Google Scholar: h-index = 9, citations = 501
+Google Scholar: h-index = 9, citations = 520
 
 **2026**
 * **Busch, P.**, Dunn, J., Pares, F., Ramji, A. & Kendall, A. (2026). **Future battery recycling in North America: Capacity expansion under shifting demand and circularity strategies**. *Resources, Conservation and Recycling, 235*, 109118. [https://doi.org/10.1016/j.resconrec.2026.109118](https://doi.org/10.1016/j.resconrec.2026.109118).
