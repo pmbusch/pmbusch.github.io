@@ -33,7 +33,7 @@ My three research lines are:
 **Representative work.**
 
 - Future battery recycling in North America: capacity expansion under shifting demand and circularity strategies — *Resources, Conservation and Recycling* (2026). [10.1016/j.resconrec.2026.109118](https://doi.org/10.1016/j.resconrec.2026.109118)
-- - Effects of demand and recycling on the when and where of lithium extraction — *Nature Sustainability* (2025). [10.1038/s41893-025-01561-5](https://doi.org/10.1038/s41893-025-01561-5)
+- Effects of demand and recycling on the when and where of lithium extraction — *Nature Sustainability* (2025). [10.1038/s41893-025-01561-5](https://doi.org/10.1038/s41893-025-01561-5)
 - Who will have enough? Battery mineral demand and sufficiency in vehicle producing countries — *Environmental Science & Technology* (2025). [10.1021/acs.est.5c12420](https://doi.org/10.1021/acs.est.5c12420)
 
 ## 3. Environmental impacts and public health
