@@ -9,7 +9,13 @@ redirect_from:
 
 Hello! I am Pablo Busch, an **Assistant Professor** at [Civil Engineering](https://www.ing.uc.cl/ingenieria-y-gestion-construccion/) and at the [Institute for Sustainable Development](https://desarrollosustentable.uc.cl/) at the Pontificia Universidad Católica de Chile. Previously I was a **Postdoctoral Scholar** at the [Sustainable Solutions Lab](https://sustainablesolutions.stanford.edu/) at the [Stanford Doerr School of Sustainability](https://sustainability.stanford.edu/).
 
-I am an **interdisciplinary researcher** with training in industrial and environmental engineering, public policy, energy systems, industrial ecology, and statistics. My research focuses on scientific analyses to support a **clean energy transition**, and to help identify risks to equity and sustainability in the emerging energy transition **mineral supply chain**. 
+My research starts from one premise: **the energy transition is, above all, a materials problem**. Decarbonization replaces fossil fuel *flows* with material *stocks*, and the costs of that shift are unevenly distributed across countries, regions, and communities. My research focus on three lines:
+
+1. **Critical minerals and the energy transition** — how global demand for energy transition minerals *(e.g lithium, copper, ...)* translates into specific mines, in specific places, at specific times.
+2. **Circular economy and sustainable materials use** — how much of our material demand can be avoided through system improvements, efficiency gains, longevity extension and recovery at end-of-life.
+3. **Environmental impacts and public health** — where the costs of these systems land, and on whom.
+
+My goal is to build **quantitative models** to inform actionable recommendations toward sustainable development.
 
 <mark>I am actively recruiting <strong>students or postdocs</strong> to join my group to work at <strong>interdisciplinary research on circular economy, materials, energy systems, air quality and sustainability</strong>. I am seeking highly motivated people to work on quantitative models to provide qualitative recommendations towards sustainable progress. <strong>If interested, I would love to hear from you!</strong> </mark>
 
