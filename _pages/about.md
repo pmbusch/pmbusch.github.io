@@ -17,9 +17,9 @@ My research starts from one premise: **the energy transition is, above all, a ma
 
 My goal is to build **quantitative models** to inform actionable recommendations toward sustainable development.
 
-<mark>I am actively recruiting <strong>students or postdocs</strong> to join my group to work at <strong>interdisciplinary research on circular economy, materials, energy systems, air quality and sustainability</strong>. I am seeking highly motivated people to work on quantitative models to provide qualitative recommendations towards sustainable progress. 
+<mark>I am actively recruiting <strong>students or postdocs</strong> to join my group to work at <strong>interdisciplinary research on circular economy, materials, energy systems, air quality and sustainability</strong>. I am seeking highly motivated people to work on quantitative models to provide qualitative recommendations towards sustainable progress.</mark>
 
-<strong>If you are interested, email me your CV and let me know which research line interests you and why.</strong> </mark>
+<mark><strong>If you are interested, email me your CV and let me know which research line interests you and why.</strong></mark>
 
 My main PhD work on **energy transition minerals (ETMs)** demand and supply is published on [*Nature Sustainability*](https://doi.org/10.1038/s41893-025-01561-5) and on [*Environmental Science & Technology*](https://doi.org/10.1021/acs.est.5c12420). In the first article we quantify the required lithium supply chain expansion in form of mine openings or expansions to meet different lithium demand scenarios, showcasing the benefits of reducing lithium-ion battery size and circular economy policies in preventing mine openings worldwide. In the second article we expand our scope to include other battery minerals (lithium, nickel, cobalt and graphite), and quantify the mineral reserve gap in vehicle producing countries and potential of circular economy policies by considering the mineral leakage in used vehicle trade.
 
