@@ -20,8 +20,8 @@
      _data/research_lines.yml; keep these in sync if that file changes) */
   --line-minerals: #a1560c;
   --line-circular: #127038;
-  --line-health: #0e7490;
-  --line-decarb: #6d28d9;
+  --line-health: #b91c1c;
+  --line-decarb: #475569;
 
   --max-width: 68rem;
   --radius: 10px;
@@ -43,8 +43,8 @@
 
     --line-minerals: #e0954f;
     --line-circular: #4ade80;
-    --line-health: #22d3ee;
-    --line-decarb: #b794f6;
+    --line-health: #f87171;
+    --line-decarb: #94a3b8;
   }
 }
 
@@ -63,8 +63,8 @@
 
   --line-minerals: #e0954f;
   --line-circular: #4ade80;
-  --line-health: #22d3ee;
-  --line-decarb: #b794f6;
+  --line-health: #f87171;
+  --line-decarb: #94a3b8;
 }
 
 * { box-sizing: border-box; }
@@ -294,11 +294,22 @@ main { min-height: 60vh; padding: 2rem 0 4rem; }
 
 .line-card__label {
   margin: 0;
-  padding: 0.9rem 1.1rem 0.6rem;
-  font-size: 1.2rem;
-  font-weight: 700;
+  padding: 1rem 1.1rem 0.6rem;
+  font-size: clamp(1.35rem, 2.2vw, 1.65rem);
+  font-weight: 800;
+  line-height: 1.2;
   color: var(--card-color, var(--text));
 }
+
+.line-card__featured {
+  margin: 0.4rem 0 0;
+  padding-top: 0.6rem;
+  border-top: 1px dashed var(--border);
+  font-size: 0.88rem;
+}
+.line-card__featured-label { color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.03em; font-size: 0.72rem; display: block; margin-bottom: 0.2rem; }
+.line-card__featured a { color: var(--text); font-weight: 600; }
+.line-card__featured a:hover { color: var(--card-color, var(--link)); }
 
 .line-card__media {
   aspect-ratio: 16 / 9;
@@ -441,9 +452,13 @@ main { min-height: 60vh; padding: 2rem 0 4rem; }
   padding: 0.75rem 0.9rem;
   border-radius: 10px;
   border: 1px solid var(--border);
+  border-left: 5px solid var(--line-color);
   background: var(--bg-subtle); /* fallback for browsers without color-mix() */
   background: color-mix(in srgb, var(--line-color) var(--heat), var(--bg-subtle));
   text-decoration: none;
+  /* text is always --text/--text-muted (never --line-color): at high heat the
+     tinted background gets close to the line color itself, which would make
+     line-colored text unreadable against it */
   color: var(--text);
   display: flex;
   flex-direction: column;
@@ -453,10 +468,11 @@ main { min-height: 60vh; padding: 2rem 0 4rem; }
 .outline-box:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
 .outline-box.is-active {
   border-color: var(--line-color);
-  border-width: 2px;
+  border-width: 1px;
+  border-left-width: 5px;
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--line-color) 30%, transparent);
 }
-.outline-box__count { font-size: 1.5rem; font-weight: 800; color: var(--line-color); line-height: 1; }
+.outline-box__count { font-size: 1.5rem; font-weight: 800; color: var(--text); line-height: 1; }
 .outline-box__label { font-size: 0.78rem; color: var(--text-muted); line-height: 1.25; }
 .outline-box.is-active .outline-box__label { color: var(--text); }
 
@@ -555,7 +571,7 @@ main { min-height: 60vh; padding: 2rem 0 4rem; }
   border: 1px solid var(--border);
   color: var(--text);
 }
-.btn--primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+.btn--primary { background: var(--link); color: var(--bg); border-color: var(--link); }
 .btn--primary:hover { opacity: 0.85; }
 .btn:not(.btn--primary):hover { border-color: var(--link); color: var(--link); }
 

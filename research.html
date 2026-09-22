@@ -9,6 +9,21 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
 
   <p>My research starts from one premise: <strong>the energy transition is, above all, a materials problem</strong>. Decarbonization replaces fossil fuel <em>flows</em> with material <em>stocks</em>, and the costs of that shift are unevenly distributed across countries, regions, and communities.</p>
 
+  <h2>Research methods and toolkit</h2>
+  <ul>
+    <li><strong>Industrial ecology</strong> — dynamic material flow analysis (MFA) and life cycle assessment (LCA), to trace materials and impacts across supply chains and life stages.</li>
+    <li><strong>Statistical methods</strong> — econometrics and causal inference, machine learning, and uncertainty quantification (Monte Carlo, scenario analysis) for forecasting and for filling data gaps.</li>
+    <li><strong>Engineering modeling</strong> — optimization and first-principles process models, grounded in the physics of the systems being modeled.</li>
+    <li><strong>Spatial analysis</strong> — GIS, to place impacts where they actually occur.</li>
+    <li><strong>Open computation</strong> — R, Python, and Julia; public code and data for every publication.</li>
+    <li><strong>Policy analysis</strong> — connect insights from my research into relevant, evidence-driven and actionable policy recommendations.</li>
+  </ul>
+
+  <h2>Data and code</h2>
+  <p>I believe in transparency and reproducibility in science, so I aim for a public code and data repository for all my publications. You can find most of the model code and data on my <a href="https://github.com/pmbusch">GitHub</a>. Please let me know if you have any questions.</p>
+
+  <h2>Research lines</h2>
+
   <!--
     Note on organization: the original research write-up (kept verbatim below, as
     sub-headings "1.", "2.", "3.") was written around three lines, with the third
@@ -30,7 +45,9 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
       <p class="research-outline__label">Publications per line</p>
       {% for line in site.data.research_lines %}
         {% assign count = site.data.publications | where_exp: "item", "item.lines contains line.id" | size %}
-        {% assign heat = count | times: 100 | divided_by: max_line_count %}
+        {% comment %} Heat is kept in a 15-40% range (not 0-100%) so the tinted
+        background never gets saturated enough to hurt text contrast. {% endcomment %}
+        {% assign heat = count | times: 25 | divided_by: max_line_count | plus: 15 %}
         <a href="#{{ line.id }}" class="outline-box" data-target="{{ line.id }}" style="--line-color: {{ line.color }}; --heat: {{ heat }}%;">
           <span class="outline-box__count">{{ count }}</span>
           <span class="outline-box__label">{{ line.label }}</span>
@@ -120,18 +137,5 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
   {% endfor %}
     </div>
   </div>
-
-  <h2>Research methods and toolkit</h2>
-  <ul>
-    <li><strong>Industrial ecology</strong> — dynamic material flow analysis (MFA) and life cycle assessment (LCA), to trace materials and impacts across supply chains and life stages.</li>
-    <li><strong>Statistical methods</strong> — econometrics and causal inference, machine learning, and uncertainty quantification (Monte Carlo, scenario analysis) for forecasting and for filling data gaps.</li>
-    <li><strong>Engineering modeling</strong> — optimization and first-principles process models, grounded in the physics of the systems being modeled.</li>
-    <li><strong>Spatial analysis</strong> — GIS, to place impacts where they actually occur.</li>
-    <li><strong>Open computation</strong> — R, Python, and Julia; public code and data for every publication.</li>
-    <li><strong>Policy analysis</strong> — connect insights from my research into relevant, evidence-driven and actionable policy recommendations.</li>
-  </ul>
-
-  <h2>Data and code</h2>
-  <p>I believe in transparency and reproducibility in science, so I aim for a public code and data repository for all my publications. You can find most of the model code and data on my <a href="https://github.com/pmbusch">GitHub</a>. Please let me know if you have any questions.</p>
 
 </div>

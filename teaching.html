@@ -11,7 +11,7 @@ description: "Courses taught by Pablo Busch at Pontificia Universidad Católica 
     {% for course in site.data.courses %}
     <div class="course-card">
       <div class="course-card__code">{{ course.code }}</div>
-      <h2 class="course-card__title">{{ course.title }}</h2>
+      <h2 class="course-card__title">{% if course.url %}<a href="{{ course.url }}">{{ course.title }}</a>{% else %}{{ course.title }}{% endif %}</h2>
       <div class="course-card__meta">
         {{ course.audience }}<br>
         Semesters taught: {{ course.semesters | join: ", " }}
