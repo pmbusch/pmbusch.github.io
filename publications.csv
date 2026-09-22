@@ -1,0 +1,7 @@
+---
+permalink: /publications.csv
+layout: null
+---
+Year,Type,Title,Authors,Venue,Details,DOI/URL,Research Lines,Selected,Award
+{% for pub in site.data.publications %}"{{ pub.year }}","{{ pub.type }}","{{ pub.title | replace: '"', '""' }}","{{ pub.authors | join: '; ' | replace: '"', '""' }}","{{ pub.venue | replace: '"', '""' }}","{{ pub.details | replace: '"', '""' }}","{{ pub.doi_url }}","{{ pub.lines | join: '; ' }}","{{ pub.selected }}","{{ pub.award.text | replace: '"', '""' }}"
+{% endfor %}

@@ -11,6 +11,27 @@
     });
   }
 
+  // Research page: outline sidebar scroll-spy (highlights the section in view)
+  var outlineBoxes = Array.prototype.slice.call(document.querySelectorAll(".outline-box"));
+  var researchSections = Array.prototype.slice.call(document.querySelectorAll(".research-line"));
+  if (outlineBoxes.length && researchSections.length && "IntersectionObserver" in window) {
+    var setActive = function (id) {
+      outlineBoxes.forEach(function (box) {
+        box.classList.toggle("is-active", box.dataset.target === id);
+      });
+    };
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) setActive(entry.target.id);
+        });
+      },
+      { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+    );
+    researchSections.forEach(function (section) { observer.observe(section); });
+    setActive(researchSections[0].id);
+  }
+
   // Publications filter (chips: line + type), URL query driven
   var list = document.getElementById("pub-list");
   if (!list) return;

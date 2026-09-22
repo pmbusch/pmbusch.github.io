@@ -1,5 +1,6 @@
 {% assign pub = include.pub %}
-<article class="pub-row" id="{{ pub.id }}" data-type="{{ pub.type }}" data-lines="{{ pub.lines | join: ',' }}">
+{% assign primary_line = site.data.research_lines | where: "id", pub.lines[0] | first %}
+<article class="pub-row" id="{{ pub.id }}" data-type="{{ pub.type }}" data-lines="{{ pub.lines | join: ',' }}" style="--pub-color: {{ primary_line.color }};">
   <div class="pub-row__chips">
     {% for line_id in pub.lines %}
       {% assign line = site.data.research_lines | where: "id", line_id | first %}

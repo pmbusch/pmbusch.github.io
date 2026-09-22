@@ -6,6 +6,16 @@ location: "Santiago, Chile"
 alumni_of: "University of California, Davis"
 avatar: "/images/avatar.jpg"
 
+# Google Scholar doesn't offer a public API and blocks most automated
+# scraping, so these are updated by hand from the profile URL below —
+# there's no reliable way to auto-fetch them on a static GitHub Pages site
+# without a scraper that's fragile and likely against Scholar's terms.
+# Update from: https://scholar.google.cl/citations?user=1klIiDgAAAAJ&hl=es&oi=ao
+scholar_stats:
+  h_index: 9
+  citations: 520
+  updated: "2026-09"
+
 links:
   - label: "Email"
     url: "mailto:pmbusch@uc.cl"

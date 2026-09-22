@@ -16,16 +16,23 @@ description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Ca
 
   <div class="link-row">
     {% for link in site.data.profile.links %}
-    <a href="{{ link.url }}">{{ link.label }}</a>
+    <a href="{{ link.url }}" class="icon-link">
+      {% include icon.html name=link.icon %}
+      <span>{{ link.label }}</span>
+    </a>
     {% endfor %}
   </div>
 
-  <p>I am an Assistant Professor at Pontificia Universidad Católica de Chile, in <a href="https://www.ing.uc.cl/ingenieria-y-gestion-construccion/">Civil Engineering</a> and in the <a href="https://desarrollosustentable.uc.cl/">Institute for Sustainable Development</a>. My research starts from one premise: the energy transition is, above all, a materials problem. I build quantitative models to understand our future material needs, how circularity can reduce that demand, and who bears the environmental and health costs in a clean energy future. My goal is to provide qualitative recommendations towards a sustainable energy transition.</p>
+  <div class="bio">
+    <p>I am an Assistant Professor at Pontificia Universidad Católica de Chile, in <a href="https://www.ing.uc.cl/ingenieria-y-gestion-construccion/">Civil Engineering</a> and in the <a href="https://desarrollosustentable.uc.cl/">Institute for Sustainable Development</a>.</p>
+    <p>My research starts from one premise: the energy transition is, above all, a materials problem. I build quantitative models to understand our future material needs, how circularity can reduce that demand, and who bears the environmental and health costs in a clean energy future. My goal is to provide qualitative recommendations towards a sustainable energy transition.</p>
+  </div>
 
   <h2>Research lines</h2>
   <div class="line-grid">
     {% for line in site.data.research_lines %}
     <div class="line-card" style="--card-color: {{ line.color }};">
+      <h3 class="line-card__label">{{ line.label }}</h3>
       <div class="line-card__media">
         {% if line.image and line.image != "" %}
         <img src="{{ line.image | relative_url }}" alt="{{ line.image_alt }}">
@@ -34,7 +41,6 @@ description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Ca
         {% endif %}
       </div>
       <div class="line-card__body">
-        <h3 class="line-card__label">{{ line.label }}</h3>
         <p class="line-card__desc">{{ line.description }}</p>
         <div class="line-card__actions">
           <a href="{{ '/research/' | relative_url }}#{{ line.id }}">Learn more</a>
@@ -46,6 +52,7 @@ description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Ca
   </div>
 
   <h2>Selected publications</h2>
+  <p class="section-hint">Each publication below is tagged with its research line — the colored bar on the left matches the line's card color above.</p>
   <!-- Explicit order per spec, rather than a data sort (which cannot break the
        2025/2025 tie between the two order-dependent entries below reliably). -->
   <div>

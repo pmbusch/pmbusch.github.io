@@ -3,9 +3,12 @@
     <p class="site-footer__name">{{ site.data.profile.name }}</p>
     <nav class="site-footer__links" aria-label="Social">
       {% for link in site.data.profile.links %}
-      <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}
+      <a href="{{ link.url }}" class="icon-link" aria-label="{{ link.label }}">
+        {% include icon.html name=link.icon %}
+        <span>{{ link.label }}</span>
+      </a>
       {% endfor %}
     </nav>
-    <p class="site-footer__updated">Last updated {{ site.time | date: "%B %-d, %Y" }}</p>
+    <p class="site-footer__updated">Last updated {{ site.time | date: "%B %Y" }}</p>
   </div>
 </footer>

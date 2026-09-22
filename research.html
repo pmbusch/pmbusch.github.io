@@ -19,6 +19,26 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
     see the flag in that section below and in the final report.
   -->
 
+  {% assign max_line_count = 1 %}
+  {% for line in site.data.research_lines %}
+    {% assign c = site.data.publications | where_exp: "item", "item.lines contains line.id" | size %}
+    {% if c > max_line_count %}{% assign max_line_count = c %}{% endif %}
+  {% endfor %}
+
+  <div class="research-grid">
+    <nav class="research-outline" aria-label="Jump to a research line">
+      <p class="research-outline__label">Publications per line</p>
+      {% for line in site.data.research_lines %}
+        {% assign count = site.data.publications | where_exp: "item", "item.lines contains line.id" | size %}
+        {% assign heat = count | times: 100 | divided_by: max_line_count %}
+        <a href="#{{ line.id }}" class="outline-box" data-target="{{ line.id }}" style="--line-color: {{ line.color }}; --heat: {{ heat }}%;">
+          <span class="outline-box__count">{{ count }}</span>
+          <span class="outline-box__label">{{ line.label }}</span>
+        </a>
+      {% endfor %}
+    </nav>
+
+    <div class="research-sections">
   {% for line in site.data.research_lines %}
   <section class="research-line" id="{{ line.id }}">
     <div class="research-line__header" style="--line-color: {{ line.color }};">
@@ -98,6 +118,8 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
     {% endif %}
   </section>
   {% endfor %}
+    </div>
+  </div>
 
   <h2>Research methods and toolkit</h2>
   <ul>
