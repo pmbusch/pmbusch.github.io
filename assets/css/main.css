@@ -20,8 +20,8 @@
      _data/research_lines.yml; keep these in sync if that file changes) */
   --line-minerals: #a1560c;
   --line-circular: #127038;
-  --line-health: #b91c1c;
-  --line-decarb: #475569;
+  --line-health: #c2255c;
+  --line-decarb: #1e40af;
 
   --max-width: 68rem;
   --radius: 10px;
@@ -43,8 +43,8 @@
 
     --line-minerals: #e0954f;
     --line-circular: #4ade80;
-    --line-health: #f87171;
-    --line-decarb: #94a3b8;
+    --line-health: #fb9a99;
+    --line-decarb: #93c5fd;
   }
 }
 
@@ -63,8 +63,8 @@
 
   --line-minerals: #e0954f;
   --line-circular: #4ade80;
-  --line-health: #f87171;
-  --line-decarb: #94a3b8;
+  --line-health: #fb9a99;
+  --line-decarb: #93c5fd;
 }
 
 * { box-sizing: border-box; }
@@ -571,7 +571,16 @@ main { min-height: 60vh; padding: 2rem 0 4rem; }
   border: 1px solid var(--border);
   color: var(--text);
 }
-.btn--primary { background: var(--link); color: var(--bg); border-color: var(--link); }
+/* Compound selector (two classes) + explicit :visited override: a plain
+   ".btn--primary" rule has the same specificity as the global "a:visited"
+   rule above, so on a visited link the two can tie and the button's
+   background/text can lose the fight depending on source order. */
+a.btn.btn--primary,
+a.btn.btn--primary:visited {
+  background: var(--link);
+  color: var(--bg);
+  border-color: var(--link);
+}
 .btn--primary:hover { opacity: 0.85; }
 .btn:not(.btn--primary):hover { border-color: var(--link); color: var(--link); }
 

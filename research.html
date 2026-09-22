@@ -25,12 +25,14 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
   <h2>Research lines</h2>
 
   <!--
-    Note on organization: the original research write-up (kept verbatim below, as
-    sub-headings "1.", "2.", "3.") was written around three lines, with the third
-    covering both public health AND decarbonization/LCA. It has been mapped onto
-    the site's 4 canonical research lines as follows: original section 1 -> minerals,
-    section 2 -> circular, section 3 -> health (its primary framing). The "decarb"
-    line does not have its own dedicated narrative paragraph in the original text —
+    Note on organization: the original research write-up (kept verbatim below —
+    originally under numbered sub-headings "1.", "2.", "3.", removed here as
+    redundant with the h2 above each section) was written around three lines,
+    with the third covering both public health AND decarbonization/LCA. It has
+    been mapped onto the site's 4 canonical research lines as follows: original
+    section 1 -> minerals, section 2 -> circular, section 3 -> health (its
+    primary framing). The "decarb" line does not have its own dedicated
+    narrative paragraph in the original text —
     see the flag in that section below and in the final report.
   -->
 
@@ -74,8 +76,6 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
 
     {% case line.id %}
     {% when "minerals" %}
-    <h3>1. Critical minerals and the energy transition</h3>
-
     <p><strong>The question.</strong> Global demand scenarios are abstract; mines are not. How does projected demand for lithium, copper, nickel, and graphite translate into actual mine openings and expansions — where, when, at what scale, and with what consequences for the countries that hold the reserves? And who is exposed when supply falls short?</p>
 
     <p><strong>How I approach it.</strong> Dynamic material flow analysis linked to supply-side expansion modeling at country and deposit resolution, coupled to bottom-up vehicle and battery demand models. Because these projections rest on deeply uncertain parameters — adoption rates, chemistry shares, recovery rates — I treat uncertainty explicitly through large-scale Monte Carlo scenario analysis rather than reporting single trajectories.</p>
@@ -90,8 +90,6 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
     </ul>
 
     {% when "circular" %}
-    <h3>2. Circular economy and sustainable materials use</h3>
-
     <p><strong>The question.</strong> Every ton of material recovered, avoided, or used more efficiently is a ton that does not have to be extracted. How much of projected demand can circularity actually displace — and, just as important, <em>when</em>? Recycling depends on stocks that were built decades earlier, so timing is a physical constraint, not a policy choice. Where does used-vehicle trade move that future scrap out of reach of the countries that need it?</p>
 
     <p><strong>How I approach it.</strong> Stock-driven dynamic MFA to model retirement and recovery flows, combined with life cycle assessment to test whether a circularity strategy delivers a net environmental gain rather than shifting the burden. I model recycling infrastructure as a capacity that must be built ahead of the waste stream, not as a recovery rate assumed to exist.</p>
@@ -104,8 +102,6 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
     </ul>
 
     {% when "health" %}
-    <h3>3. Environmental impacts and public health</h3>
-
     <p><strong>The question.</strong> Decarbonization pathways are usually compared on climate metrics alone, but their costs and benefits also land locally — on air quality, on health, on specific populations. Which industrial decarbonization pathways actually deliver, once the full life cycle is accounted for rather than assumed? And what is the measurable health burden of the pollution these systems produce?</p>
 
     <p><strong>How I approach it.</strong> Two complementary sets of tools. For prospective questions, life cycle assessment and policy analysis to compare pathways in hard-to-abate sectors — cement, hydrogen, transport — and to identify which barriers are technological and which are institutional. For retrospective questions, econometric and causal-inference methods applied to observational exposure and mortality data, where the challenge is identification rather than projection.</p>

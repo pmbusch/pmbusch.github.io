@@ -28,9 +28,10 @@ description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Ca
     <p>My research starts from one premise: the energy transition is, above all, a materials problem. I build quantitative models to understand our future material needs, how circularity can reduce that demand, and who bears the environmental and health costs in a clean energy future. My goal is to provide qualitative recommendations towards a sustainable energy transition.</p>
   </div>
 
-  <!-- Explicit order per spec, rather than a data sort (which cannot break the
-       2025/2025 tie between the two order-dependent entries reliably). Reused
-       below to feature one selected publication inside each line's card. -->
+  <!-- The 4 curated "selected" publications, used to feature one per research
+       line's card below (a pub can be the featured one for more than one line
+       when it's tagged with both, e.g. the lithium paper under both minerals
+       and circular). -->
   {% assign selected_ids = "busch2025lithium,busch2025sufficiency,busch2024pm25,busch2022cement" | split: "," %}
 
   <h2>Research lines</h2>
@@ -66,15 +67,6 @@ description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Ca
         </div>
       </div>
     </div>
-    {% endfor %}
-  </div>
-
-  <h2>Selected publications</h2>
-  <p class="section-hint">Each publication below is tagged with its research line — the colored bar on the left matches the line's card color above.</p>
-  <div>
-    {% for sid in selected_ids %}
-      {% assign pub = site.data.publications | where: "id", sid | first %}
-      {% include pub-row.html pub=pub %}
     {% endfor %}
   </div>
 

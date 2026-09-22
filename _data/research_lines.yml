@@ -21,7 +21,7 @@
 - id: health
   label: "Environmental impacts and public health"
   description: "Where the costs of these systems land, and on whom."
-  color: "#b91c1c"
+  color: "#c2255c"
   image: "" # TODO: user specifies figure number from Busch et al. (2024), Communications Earth & Environment, https://doi.org/10.1038/s43247-024-01634-x — license confirmed CC BY 4.0 via Crossref metadata, so once a figure number is chosen it can be used with caption "Figure from Busch et al. (2024), Communications Earth & Environment, CC BY 4.0."
   image_alt: ""
   image_caption: ""
@@ -30,7 +30,7 @@
 - id: decarb
   label: "Decarbonization and life cycle assessment"
   description: "Policies and life cycle emissions of hard-to-abate sectors and energy carriers, such as cement and hydrogen."
-  color: "#475569"
+  color: "#1e40af"
   image: "" # TODO: user decides figure — empty styled placeholder for now
   image_alt: ""
   image_caption: ""
