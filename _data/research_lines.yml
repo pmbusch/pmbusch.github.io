@@ -12,7 +12,7 @@
 - id: circular
   label: "Circular economy"
   description: "How much of our material demand can be avoided through system improvements, efficiency gains, longevity extension and recovery at end-of-life."
-  color: "#15803d"
+  color: "#127038"
   image: "" # TODO: user provides file — a battery or recycling photo
   image_alt: ""
   image_caption: ""
