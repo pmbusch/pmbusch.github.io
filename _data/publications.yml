@@ -1,0 +1,283 @@
+# Schema: see PROMPT section 4.3. `lines` lists the primary research line first.
+# `takeaway_reviewed: false` means the draft in TAKEAWAYS_REVIEW.md has not been
+# approved yet, so it will not render on the site.
+
+# ── Peer-reviewed journal articles ──────────────────────────────────────────
+
+- id: busch2026recycling
+  type: article
+  title: "Future battery recycling in North America: Capacity expansion under shifting demand and circularity strategies"
+  authors: ["Busch, P.", "Dunn, J.", "Pares, F.", "Ramji, A.", "Kendall, A."]
+  venue: "Resources, Conservation and Recycling"
+  year: 2026
+  details: "235, 109118"
+  doi_url: "https://doi.org/10.1016/j.resconrec.2026.109118"
+  lines: [circular, minerals]
+  selected: false
+  takeaway: "" # abstract not accessible (paywalled/JS-gated); see TAKEAWAYS_REVIEW.md
+  takeaway_reviewed: false
+
+- id: busch2026lca
+  type: article
+  title: "Life cycle performance and carbon handprint of lithium-ion batteries in electric vehicles"
+  authors: ["Busch, P.", "Chen, Y.", "Kendall, A."]
+  venue: "Journal of Industrial Ecology"
+  year: 2026
+  details: ""
+  doi_url: "https://doi.org/10.1007/s44498-026-00112-1"
+  lines: [circular, decarb]
+  selected: false
+  takeaway: "EVs cut US light-duty fleet's energy use, material extraction, and CO2 emissions versus an all-gasoline scenario, despite higher metal mining needs."
+  takeaway_reviewed: false
+
+- id: santero2026electrifying
+  type: article
+  title: "Electrifying light vehicles in the United States shows emission reduction potential for all vehicle types and powertrains"
+  authors: ["Santero, N.", "Nelson, L.", "Chen, Y.", "Meredith, M.", "Busch, P.", "Kendall, A."]
+  venue: "Communications Sustainability"
+  year: 2026
+  details: "1, 23"
+  doi_url: "https://doi.org/10.1038/s44458-025-00032-4"
+  lines: [decarb]
+  selected: false
+  takeaway: "Electrifying all 2023 US light vehicles sold, especially trucks, would cut lifecycle emissions 59%, with battery electric vehicles beating gasoline and hybrid options."
+  takeaway_reviewed: false
+
+- id: duex2026copper
+  type: article
+  title: "The electric vehicle transition: effects on copper supply dynamics in a net-zero future"
+  authors: ["Duex, S.", "Busch, P.", "Kendall, A."]
+  venue: "Resources, Conservation and Recycling"
+  year: 2026
+  details: "228, 108798"
+  doi_url: "https://doi.org/10.1016/j.resconrec.2026.108798"
+  lines: [minerals]
+  selected: false
+  takeaway: "Meeting future EV copper demand needs major new mining, but higher recycling and smaller batteries could cut required new mines from 373 to 87."
+  takeaway_reviewed: false
+
+- id: busch2025lithium
+  type: article
+  title: "Effects of Demand and Recycling on the When and Where of Lithium Extraction"
+  authors: ["Busch, P.", "Chen, Y.", "Ogbonna, P.", "Kendall, A."]
+  venue: "Nature Sustainability"
+  year: 2025
+  details: "1-11"
+  doi_url: "https://doi.org/10.1038/s41893-025-01561-5"
+  lines: [minerals, circular]
+  selected: true
+  takeaway: "" # abstract not accessible (publisher elides it from APIs; Nature page login-gated); see TAKEAWAYS_REVIEW.md
+  takeaway_reviewed: false
+
+- id: busch2025sufficiency
+  type: article
+  title: "Who Will Have Enough? Battery Mineral Demand and Sufficiency in Vehicle Producing Countries"
+  authors: ["Busch, P.", "Pares, F.", "Tal, G.", "Kendall, A."]
+  venue: "Environmental Science & Technology"
+  year: 2025
+  details: "59(45), 24392-24403"
+  doi_url: "https://doi.org/10.1021/acs.est.5c12420"
+  lines: [minerals, circular]
+  selected: true
+  takeaway: "Minerals for EV batteries are globally sufficient, but countries that manufacture EVs face shortfalls and import dependence, even with strong recycling."
+  takeaway_reviewed: false
+
+- id: chandra2025paths
+  type: article
+  title: "Paths of progress: Forecasting global electric vehicle demand amidst demographic and economic growth"
+  authors: ["Chandra, M.", "Busch, P.", "Pares, F.", "Tal, G."]
+  venue: "Transportation Research Part D: Transport and Environment"
+  year: 2025
+  details: "147, 104928"
+  doi_url: "https://doi.org/10.1016/j.trd.2025.104928"
+  lines: [minerals]
+  selected: false
+  takeaway: "Global light-duty vehicle sales will grow to 93-124 million by 2035, with EV demand reaching up to 73 million if targets are met."
+  takeaway_reviewed: false
+
+- id: busch2025cement
+  type: article
+  title: "Policy mechanisms to decarbonize cement production: through the lens of California"
+  authors: ["Busch, P.", "Kim, A.", "Miller, S.A.", "Murphy, C.W."]
+  venue: "Environmental Research: Infrastructure and Sustainability"
+  year: 2025
+  details: "5(2), 025003"
+  doi_url: "https://doi.org/10.1088/2634-4505/adbc1a"
+  lines: [decarb]
+  selected: false
+  takeaway: "Cement makes large CO2 emissions; policy actions like public procurement and performance-based codes can support California's net-zero cement goals and inform other regions."
+  takeaway_reviewed: false
+
+- id: pares2024shifting
+  type: article
+  title: "Shifting Manufacturing: Electric Vehicle Supply Strategy using the Model for International EV Trade"
+  authors: ["Pares, F.", "Busch, P.", "Chandra, M.", "Tal, G."]
+  venue: "Journal of Cleaner Production"
+  year: 2024
+  details: "144357"
+  doi_url: "https://doi.org/10.1016/j.jclepro.2024.144357"
+  lines: [minerals]
+  selected: false
+  takeaway: "Mexico supplies 15% of US vehicles but only 6% of EVs; it must shift half its output to EVs by 2035 to keep market share."
+  takeaway_reviewed: false
+
+- id: busch2024pm25
+  type: article
+  title: "Short-term exposure to fine particulate pollution and elderly mortality in Chile"
+  authors: ["Busch, P.", "Rocha, P.", "Lee, K.", "Cifuentes, L.", "Tai, X."]
+  venue: "Communications Earth & Environment"
+  year: 2024
+  details: "5(1), 469"
+  doi_url: "https://doi.org/10.1038/s43247-024-01634-x"
+  lines: [health]
+  selected: true
+  takeaway: "A 10 µg/m³ rise in monthly PM2.5 raises all-cause mortality 1.7% in Chileans over 75, with stronger effects in central-south and metro areas."
+  takeaway_reviewed: false
+
+- id: busch2024supplychain
+  type: article
+  title: "Future of Global Electric Vehicle Supply Chain: Exploring the Impact of Global Trade on Electric Vehicle Production and Battery Requirements"
+  authors: ["Busch, P.", "Pares, F.", "Chandra, M.", "Kendall, A.", "Tal, G."]
+  venue: "Transportation Research Record"
+  year: 2024
+  details: "2678(11), 1468-1482"
+  doi_url: "https://doi.org/10.1177/03611981241244797"
+  lines: [minerals]
+  selected: false
+  takeaway: "A new trade model shows EV production will cluster in regional blocks; rising demand in one country doesn't proportionally boost its own production."
+  takeaway_reviewed: false
+
+- id: brandao2024lca
+  type: article
+  title: "Life cycle assessment, quo vadis? Supporting or deterring greenwashing? A survey of practitioners"
+  authors: ["Brandao, M.", "Busch, P.", "Kendall, A."]
+  venue: "Environmental Science: Advances"
+  year: 2024
+  details: "3(2), 266-273"
+  doi_url: "https://pubs.rsc.org/en/content/articlelanding/2024/va/d3va00317e"
+  lines: [decarb]
+  selected: false
+  takeaway: "Life cycle assessment results vary widely across practitioners, risking greenwashing; more harmonization is needed to make results consistent and meaningful."
+  takeaway_reviewed: false
+
+- id: busch2023hydrogen
+  type: article
+  title: "A systematic review of life cycle greenhouse gas intensity values for hydrogen production pathways"
+  authors: ["Busch, P.", "Kendall, A.", "Lipman, T."]
+  venue: "Renewable and Sustainable Energy Reviews"
+  year: 2023
+  details: "184, 113588"
+  doi_url: "https://doi.org/10.1016/j.rser.2023.113588"
+  lines: [decarb]
+  selected: false
+  takeaway: "A review of 85 studies finds hydrogen production's carbon intensity varies widely; renewable-powered electrolysis is lowest, while steam methane reforming is highest."
+  takeaway_reviewed: false
+
+- id: busch2023chronicpm25
+  type: article
+  title: "Chronic exposure to fine particles (PM2.5) and mortality: Evidence from Chile"
+  authors: ["Busch, P.", "Cifuentes, L.A.", "Cabrera, C."]
+  venue: "Environmental Epidemiology"
+  year: 2023
+  details: "e253"
+  doi_url: "http://dx.doi.org/10.1097/EE9.0000000000000253"
+  lines: [health]
+  selected: false
+  takeaway: "Three-year average PM2.5 exposure is linked to higher cardiopulmonary and pulmonary mortality across Chilean municipalities, matching findings from wealthier countries."
+  takeaway_reviewed: false
+
+- id: busch2022cement
+  type: article
+  title: "Literature review on policies to mitigate GHG emissions for cement and concrete"
+  authors: ["Busch, P.", "Kendall, A.", "Murphy, C.W.", "Miller, S.A."]
+  venue: "Resources, Conservation and Recycling"
+  year: 2022
+  details: "182, 106278"
+  doi_url: "https://doi.org/10.1016/j.resconrec.2022.106278"
+  lines: [decarb]
+  selected: true
+  award:
+    text: "2024 Most Downloaded Paper Award, Resources, Conservation and Recycling"
+    url: "https://www.sciencedirect.com/journal/resources-conservation-and-recycling/about/news/resources-conservation-recycling-2024-most-downloaded-paper-awards"
+  takeaway: "A review of 37 studies finds broad agreement on technical fixes for cement decarbonization, but no consensus yet on which policies work best."
+  takeaway_reviewed: false
+
+# ── Reports & policy briefs ──────────────────────────────────────────────────
+
+- id: busch2026batteries
+  type: report
+  title: "Batteries Without Borders: Trade, Circularity, and the Future of Critical Mineral Security"
+  authors: ["Busch, P.", "Pares, F.", "Kendall, A.", "Sulwe, C."]
+  venue: "Majority Mobility"
+  year: 2026
+  details: "Issue 2"
+  doi_url: "https://doi.org/10.7922/G2CZ35K6"
+  lines: [minerals, circular]
+  selected: false
+  takeaway: "" # abstract not accessible (landing page blocked automated fetch); see TAKEAWAYS_REVIEW.md
+  takeaway_reviewed: false
+
+- id: pares2024renewable
+  type: report
+  title: "Renewable Energy and Energy Storage Value Chains in Latin America and the Caribbean"
+  authors: ["Pares, F.", "Busch, P."]
+  venue: "Inter-American Development Bank"
+  year: 2024
+  details: ""
+  doi_url: "http://dx.doi.org/10.18235/0013197"
+  lines: [minerals]
+  selected: false
+  takeaway: "Latin America and the Caribbean can capture opportunities across solar, wind, and lithium battery value chains, with country-specific recommendations by production stage." # low-confidence: from a secondary description, not the report's own text — see TAKEAWAYS_REVIEW.md
+  takeaway_reviewed: false
+
+- id: lipman2024movingbeyond
+  type: report
+  title: "Moving Beyond the Colors: The Full Life-Cycle Emissions of Hydrogen Production Pathways for California"
+  authors: ["Lipman, T.", "Busch, P.", "Collins, S.", "Horvath, A.", "Kendall, A.", "Coffee, D.", "Kong, D."]
+  venue: "UC Office of the President: University of California Institute of Transportation Studies"
+  year: 2024
+  details: ""
+  doi_url: "https://doi.org/10.7922/G26Q1VKR"
+  lines: [decarb]
+  selected: false
+  takeaway: "Carbon intensity of hydrogen varies widely by production method; biomass/biogas and renewable-electricity pathways are lowest, and can also create jobs." # low-confidence: from a secondary description, not the report's own text — see TAKEAWAYS_REVIEW.md
+  takeaway_reviewed: false
+
+- id: tal2023mexico
+  type: report
+  title: "Policy Brief: Implications of Global Electric Vehicle Adoption Targets for Mexico Light Duty Auto Industry"
+  authors: ["Tal, G.", "Pares, F.", "Busch, P.", "Chandra, M."]
+  venue: "UC Davis: Electric Vehicle Research Center"
+  year: 2023
+  details: ""
+  doi_url: "https://escholarship.org/uc/item/57s3t1hg"
+  lines: [minerals]
+  selected: false
+  takeaway: "Mexico's light-duty vehicle market will stay fairly stable in size while EV demand grows, per new MONET model scenarios for the auto industry." # low-confidence: from a secondary description, not the report's own text — see TAKEAWAYS_REVIEW.md
+  takeaway_reviewed: false
+
+- id: lipman2022hydrogen
+  type: report
+  title: "Hydrogen Can Have a Much Lower Carbon Intensity than Fossil Fuels But This Largely Depends on How It Is Produced and Distributed"
+  authors: ["Lipman, T.", "Horvath, A.", "Collins, S.", "Kendall, A.", "Fulton, L.", "Busch, P."]
+  venue: "UC Office of the President: University of California Institute of Transportation Studies"
+  year: 2022
+  details: ""
+  doi_url: "https://doi.org/10.7922/G21834TX"
+  lines: [decarb]
+  selected: false
+  takeaway: "Hydrogen's \"color\" labels are too simplistic; some non-green pathways can also have very low or negative emissions depending on how hydrogen is made." # low-confidence: from a secondary description, not the report's own text — see TAKEAWAYS_REVIEW.md
+  takeaway_reviewed: false
+
+- id: busch2022industrial
+  type: report
+  title: "Industrial Decarbonization: Policy Pathways for the Cement & Concrete Sector"
+  authors: ["Busch, P.", "Kendall, A.", "Murphy, C.W.", "Miller, S."]
+  venue: "UC Davis: Policy Institute for Energy, Environment, and the Economy"
+  year: 2022
+  details: ""
+  doi_url: "https://escholarship.org/uc/item/9995b2xc"
+  lines: [decarb]
+  selected: false
+  takeaway: "Cutting cement and concrete emissions needs combined policy: modern standards, incentives, carbon capture investment, and international collaboration across the sector." # low-confidence: from a secondary description, not the report's own text — see TAKEAWAYS_REVIEW.md
+  takeaway_reviewed: false

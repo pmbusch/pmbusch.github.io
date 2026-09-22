@@ -1,0 +1,5 @@
+{% assign pub = include.pub %}
+<li>
+  {% if pub.doi_url %}<a href="{{ pub.doi_url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+  — <span class="venue-year">{{ pub.venue }} ({{ pub.year }})</span>
+</li>

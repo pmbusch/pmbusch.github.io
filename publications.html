@@ -1,0 +1,65 @@
+---
+layout: default
+title: "Publications"
+permalink: /publications/
+description: "Peer-reviewed articles and reports by Pablo Busch on energy transition minerals, circular economy, environmental health, and decarbonization."
+---
+<div class="wrap">
+  <h1>Publications</h1>
+  <p>You can also find my articles on my <a href="https://scholar.google.cl/citations?user=1klIiDgAAAAJ&amp;hl=es&amp;oi=ao">Google Scholar</a> profile. Google Scholar: h-index = 9, citations = 520.</p>
+
+  {% assign all_pubs = site.data.publications %}
+  {% assign articles = all_pubs | where: "type", "article" %}
+  {% assign reports = all_pubs | where: "type", "report" %}
+
+  <ul class="filter-bar" role="group" aria-label="Filter publications">
+    <li><button class="filter-chip" data-filter-kind="all" aria-pressed="true">All <span class="count">({{ all_pubs.size }})</span></button></li>
+    {% for line in site.data.research_lines %}
+      {% assign line_pubs = all_pubs | where_exp: "item", "item.lines contains line.id" %}
+      <li><button class="filter-chip" data-filter-kind="line" data-filter-value="{{ line.id }}" aria-pressed="false">{{ line.label }} <span class="count">({{ line_pubs.size }})</span></button></li>
+    {% endfor %}
+    <li><button class="filter-chip" data-filter-kind="type" data-filter-value="article" aria-pressed="false">Articles <span class="count">({{ articles.size }})</span></button></li>
+    <li><button class="filter-chip" data-filter-kind="type" data-filter-value="report" aria-pressed="false">Reports &amp; policy briefs <span class="count">({{ reports.size }})</span></button></li>
+  </ul>
+
+  <div id="pub-list">
+    <h2 class="pub-group-header">Peer-reviewed journal articles</h2>
+    {% assign article_years = articles | map: "year" | uniq | sort | reverse %}
+    {% for y in article_years %}
+      <h3 class="pub-year-header">{{ y }}</h3>
+      {% assign year_pubs = articles | where: "year", y %}
+      {% for pub in year_pubs %}
+        {% include pub-row.html pub=pub %}
+      {% endfor %}
+    {% endfor %}
+
+    <h2 class="pub-group-header">Reports &amp; policy briefs</h2>
+    {% assign report_years = reports | map: "year" | uniq | sort | reverse %}
+    {% for y in report_years %}
+      <h3 class="pub-year-header">{{ y }}</h3>
+      {% assign year_pubs = reports | where: "year", y %}
+      {% for pub in year_pubs %}
+        {% include pub-row.html pub=pub %}
+      {% endfor %}
+    {% endfor %}
+
+    <p class="pub-empty" id="pub-empty" hidden>No publications match this filter.</p>
+  </div>
+</div>
+
+<script type="application/ld+json">
+[
+{% for pub in all_pubs %}
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "name": {{ pub.title | jsonify }},
+    "author": [{% for a in pub.authors %}{ "@type": "Person", "name": {{ a | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}],
+    "datePublished": "{{ pub.year }}",
+    "isPartOf": { "@type": "Periodical", "name": {{ pub.venue | jsonify }} }{% if pub.doi_url %},
+    "url": {{ pub.doi_url | jsonify }},
+    "identifier": {{ pub.doi_url | jsonify }}{% endif %}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]
+</script>
