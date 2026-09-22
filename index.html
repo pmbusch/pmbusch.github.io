@@ -1,0 +1,64 @@
+---
+layout: default
+title: "Home"
+permalink: /
+description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Católica de Chile researching energy transition minerals, circular economy, environmental health, and decarbonization."
+---
+<div class="wrap">
+
+  <div class="hero">
+    <img class="hero__avatar" src="{{ site.data.profile.avatar | relative_url }}" alt="Portrait of Pablo Busch">
+    <div>
+      <h1 class="hero__name">{{ site.data.profile.name }}</h1>
+      <p class="hero__title">{{ site.data.profile.title }}</p>
+    </div>
+  </div>
+
+  <div class="link-row">
+    {% for link in site.data.profile.links %}
+    <a href="{{ link.url }}">{{ link.label }}</a>
+    {% endfor %}
+  </div>
+
+  <p>I am an Assistant Professor at Pontificia Universidad Católica de Chile, in <a href="https://www.ing.uc.cl/ingenieria-y-gestion-construccion/">Civil Engineering</a> and in the <a href="https://desarrollosustentable.uc.cl/">Institute for Sustainable Development</a>. My research starts from one premise: the energy transition is, above all, a materials problem. I build quantitative models to understand our future material needs, how circularity can reduce that demand, and who bears the environmental and health costs in a clean energy future. My goal is to provide qualitative recommendations towards a sustainable energy transition.</p>
+
+  <h2>Research lines</h2>
+  <div class="line-grid">
+    {% for line in site.data.research_lines %}
+    <div class="line-card" style="--card-color: {{ line.color }};">
+      <div class="line-card__media">
+        {% if line.image and line.image != "" %}
+        <img src="{{ line.image | relative_url }}" alt="{{ line.image_alt }}">
+        {% else %}
+        <div class="line-card__placeholder">Image coming soon</div>
+        {% endif %}
+      </div>
+      <div class="line-card__body">
+        <h3 class="line-card__label">{{ line.label }}</h3>
+        <p class="line-card__desc">{{ line.description }}</p>
+        <div class="line-card__actions">
+          <a href="{{ '/research/' | relative_url }}#{{ line.id }}">Learn more</a>
+          <a href="{{ '/publications/' | relative_url }}?line={{ line.id }}">Publications</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <h2>Selected publications</h2>
+  <!-- Explicit order per spec, rather than a data sort (which cannot break the
+       2025/2025 tie between the two order-dependent entries below reliably). -->
+  <div>
+    {% assign selected_ids = "busch2025lithium,busch2025sufficiency,busch2024pm25,busch2022cement" | split: "," %}
+    {% for sid in selected_ids %}
+      {% assign pub = site.data.publications | where: "id", sid | first %}
+      {% include pub-row.html pub=pub %}
+    {% endfor %}
+  </div>
+
+  <div class="join-banner">
+    <p>I am recruiting students and postdocs.</p>
+    <a class="btn btn--primary" href="{{ '/contact/' | relative_url }}">Join &amp; Contact</a>
+  </div>
+
+</div>

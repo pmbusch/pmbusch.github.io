@@ -1,0 +1,50 @@
+---
+layout: default
+title: "Join & Contact"
+permalink: /contact/
+description: "Join Pablo Busch's research group at Pontificia Universidad Católica de Chile, or get in touch."
+---
+<div class="wrap">
+  <h1>Join the group</h1>
+
+  <p>I am recruiting students and postdocs to join my group at Pontificia Universidad Católica de Chile. The group builds quantitative models to guide a sustainable energy transition. Group members will work on:</p>
+
+  <ul class="join-list">
+    {% for line in site.data.research_lines %}
+    {% assign emoji = "" %}
+    {% case line.id %}
+      {% when "minerals" %}{% assign emoji = "🌎" %}
+      {% when "circular" %}{% assign emoji = "♻️" %}
+      {% when "health" %}{% assign emoji = "🫁" %}
+      {% when "decarb" %}{% assign emoji = "🏭" %}
+    {% endcase %}
+    <li style="--item-color: {{ line.color }};">{{ emoji }} <strong>{{ line.label }}:</strong>
+      {% case line.id %}
+        {% when "minerals" %}how mineral demand translates into specific mines, places, and times.
+        {% when "circular" %}how much material demand can be avoided through efficiency, longevity, and recovery.
+        {% when "health" %}where the environmental and health costs land, and on whom.
+        {% when "decarb" %}policies and life cycle emissions for hard-to-abate sectors.
+      {% endcase %}
+    </li>
+    {% endfor %}
+  </ul>
+
+  <p><strong>Who should apply:</strong> Anyone motivated to contribute towards sustainable development, from any discipline. Backgrounds in engineering, economics, statistics, environmental science or related fields, and quantitative skills (e.g., programming in R or Python, statistics, modeling), are preferred.</p>
+
+  <p><strong>How to apply:</strong> Email me your CV, with a short summary of your background, which research line interests you, and why.</p>
+
+  <dl class="contact-block">
+    <dt>Email</dt>
+    <dd><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a></dd>
+
+    <dt>Affiliation</dt>
+    <dd>{{ site.data.profile.affiliation }} — {{ site.data.profile.location }}</dd>
+
+    <dt>Links</dt>
+    <dd>
+      {% for link in site.data.profile.links %}
+        {% unless link.label == "Email" %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endunless %}
+      {% endfor %}
+    </dd>
+  </dl>
+</div>

@@ -1,0 +1,23 @@
+---
+layout: default
+title: "Teaching"
+permalink: /teaching/
+description: "Courses taught by Pablo Busch at Pontificia Universidad Católica de Chile."
+---
+<div class="wrap">
+  <h1>Teaching</h1>
+
+  <div class="course-grid">
+    {% for course in site.data.courses %}
+    <div class="course-card">
+      <div class="course-card__code">{{ course.code }}</div>
+      <h2 class="course-card__title">{{ course.title }}</h2>
+      <div class="course-card__meta">
+        {{ course.audience }}<br>
+        Semesters taught: {{ course.semesters | join: ", " }}
+      </div>
+      <p>{{ course.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

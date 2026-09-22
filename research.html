@@ -1,0 +1,115 @@
+---
+layout: default
+title: "Research"
+permalink: /research/
+description: "Pablo Busch's research lines: energy transition minerals, circular economy, environmental impacts and public health, and decarbonization and life cycle assessment."
+---
+<div class="wrap">
+  <h1>Current Research</h1>
+
+  <p>My research starts from one premise: <strong>the energy transition is, above all, a materials problem</strong>. Decarbonization replaces fossil fuel <em>flows</em> with material <em>stocks</em>, and the costs of that shift are unevenly distributed across countries, regions, and communities.</p>
+
+  <!--
+    Note on organization: the original research write-up (kept verbatim below, as
+    sub-headings "1.", "2.", "3.") was written around three lines, with the third
+    covering both public health AND decarbonization/LCA. It has been mapped onto
+    the site's 4 canonical research lines as follows: original section 1 -> minerals,
+    section 2 -> circular, section 3 -> health (its primary framing). The "decarb"
+    line does not have its own dedicated narrative paragraph in the original text —
+    see the flag in that section below and in the final report.
+  -->
+
+  {% for line in site.data.research_lines %}
+  <section class="research-line" id="{{ line.id }}">
+    <div class="research-line__header" style="--line-color: {{ line.color }};">
+      <h2>{{ line.label }}</h2>
+      <p>{{ line.description }}</p>
+    </div>
+
+    {% if line.image and line.image != "" %}
+    <figure class="research-line__figure">
+      <img src="{{ line.image | relative_url }}" alt="{{ line.image_alt }}">
+      <figcaption>{{ line.image_caption }}{% if line.image_credit and line.image_credit != "" %} — {{ line.image_credit }}{% endif %}</figcaption>
+    </figure>
+    {% else %}
+    <div class="figure-placeholder">Figure coming soon.</div>
+    {% endif %}
+
+    {% case line.id %}
+    {% when "minerals" %}
+    <h3>1. Critical minerals and the energy transition</h3>
+
+    <p><strong>The question.</strong> Global demand scenarios are abstract; mines are not. How does projected demand for lithium, copper, nickel, and graphite translate into actual mine openings and expansions — where, when, at what scale, and with what consequences for the countries that hold the reserves? And who is exposed when supply falls short?</p>
+
+    <p><strong>How I approach it.</strong> Dynamic material flow analysis linked to supply-side expansion modeling at country and deposit resolution, coupled to bottom-up vehicle and battery demand models. Because these projections rest on deeply uncertain parameters — adoption rates, chemistry shares, recovery rates — I treat uncertainty explicitly through large-scale Monte Carlo scenario analysis rather than reporting single trajectories.</p>
+
+    <p><strong>Representative work.</strong></p>
+    <ul>
+      <li>Effects of demand and recycling on the when and where of lithium extraction — <em>Nature Sustainability</em> (2025). <a href="https://doi.org/10.1038/s41893-025-01561-5">10.1038/s41893-025-01561-5</a></li>
+      <li>Who will have enough? Battery mineral demand and sufficiency in vehicle producing countries — <em>Environmental Science &amp; Technology</em> (2025). <a href="https://doi.org/10.1021/acs.est.5c12420">10.1021/acs.est.5c12420</a></li>
+      <li>The electric vehicle transition: effects on copper supply dynamics in a net-zero future — <em>Resources, Conservation and Recycling</em> (2026). <a href="https://doi.org/10.1016/j.resconrec.2026.108798">10.1016/j.resconrec.2026.108798</a></li>
+      <li>Future of the global electric vehicle supply chain — <em>Transportation Research Record</em> (2024). <a href="https://doi.org/10.1177/03611981241244797">10.1177/03611981241244797</a></li>
+      <li>Shifting manufacturing: electric vehicle supply strategy using the Model for International EV Trade — <em>Journal of Cleaner Production</em> (2024). <a href="https://doi.org/10.1016/j.jclepro.2024.144357">10.1016/j.jclepro.2024.144357</a></li>
+    </ul>
+
+    {% when "circular" %}
+    <h3>2. Circular economy and sustainable materials use</h3>
+
+    <p><strong>The question.</strong> Every ton of material recovered, avoided, or used more efficiently is a ton that does not have to be extracted. How much of projected demand can circularity actually displace — and, just as important, <em>when</em>? Recycling depends on stocks that were built decades earlier, so timing is a physical constraint, not a policy choice. Where does used-vehicle trade move that future scrap out of reach of the countries that need it?</p>
+
+    <p><strong>How I approach it.</strong> Stock-driven dynamic MFA to model retirement and recovery flows, combined with life cycle assessment to test whether a circularity strategy delivers a net environmental gain rather than shifting the burden. I model recycling infrastructure as a capacity that must be built ahead of the waste stream, not as a recovery rate assumed to exist.</p>
+
+    <p><strong>Representative work.</strong></p>
+    <ul>
+      <li>Future battery recycling in North America: capacity expansion under shifting demand and circularity strategies — <em>Resources, Conservation and Recycling</em> (2026). <a href="https://doi.org/10.1016/j.resconrec.2026.109118">10.1016/j.resconrec.2026.109118</a></li>
+      <li>Effects of demand and recycling on the when and where of lithium extraction — <em>Nature Sustainability</em> (2025). <a href="https://doi.org/10.1038/s41893-025-01561-5">10.1038/s41893-025-01561-5</a></li>
+      <li>Who will have enough? Battery mineral demand and sufficiency in vehicle producing countries — <em>Environmental Science &amp; Technology</em> (2025). <a href="https://doi.org/10.1021/acs.est.5c12420">10.1021/acs.est.5c12420</a></li>
+    </ul>
+
+    {% when "health" %}
+    <h3>3. Environmental impacts and public health</h3>
+
+    <p><strong>The question.</strong> Decarbonization pathways are usually compared on climate metrics alone, but their costs and benefits also land locally — on air quality, on health, on specific populations. Which industrial decarbonization pathways actually deliver, once the full life cycle is accounted for rather than assumed? And what is the measurable health burden of the pollution these systems produce?</p>
+
+    <p><strong>How I approach it.</strong> Two complementary sets of tools. For prospective questions, life cycle assessment and policy analysis to compare pathways in hard-to-abate sectors — cement, hydrogen, transport — and to identify which barriers are technological and which are institutional. For retrospective questions, econometric and causal-inference methods applied to observational exposure and mortality data, where the challenge is identification rather than projection.</p>
+
+    <p><strong>Representative work.</strong></p>
+    <ul>
+      <li>Life cycle performance and carbon handprint of lithium-ion batteries in electric vehicles — <em>Journal of Industrial Ecology</em> (2026). <a href="https://doi.org/10.1007/s44498-026-00112-1">10.1007/s44498-026-00112-1</a></li>
+      <li>Short-term exposure to fine particulate pollution and elderly mortality in Chile — <em>Communications Earth &amp; Environment</em> (2024). <a href="https://doi.org/10.1038/s43247-024-01634-x">10.1038/s43247-024-01634-x</a></li>
+      <li>Chronic exposure to fine particles (PM2.5) and mortality: evidence from Chile — <em>Environmental Epidemiology</em> (2023). <a href="https://doi.org/10.1097/EE9.0000000000000253">10.1097/EE9.0000000000000253</a></li>
+      <li>Literature review on policies to mitigate GHG emissions for cement and concrete — <em>Resources, Conservation and Recycling</em> (2022), 2024 Most Downloaded Paper Award. <a href="https://doi.org/10.1016/j.resconrec.2022.106278">10.1016/j.resconrec.2022.106278</a></li>
+      <li>A systematic review of life cycle greenhouse gas intensity values for hydrogen production pathways — <em>Renewable and Sustainable Energy Reviews</em> (2023). <a href="https://doi.org/10.1016/j.rser.2023.113588">10.1016/j.rser.2023.113588</a></li>
+      <li>Electrifying light vehicles in the United States shows emission reduction potential for all vehicle types and powertrains — <em>Communications Sustainability</em> (2026). <a href="https://doi.org/10.1038/s44458-025-00032-4">10.1038/s44458-025-00032-4</a></li>
+    </ul>
+
+    {% when "decarb" %}
+    <p><em>The original research write-up above does not have a section written specifically for this line — its narrative (methods, framing) is combined with "Environmental impacts and public health" above, since several of the same publications and methods (life cycle assessment, policy analysis of cement and hydrogen) span both. See the auto-generated publication list below for this line's output. <strong>TODO:</strong> consider drafting a dedicated paragraph for this line.</em></p>
+    {% endcase %}
+
+    {% assign line_pubs = site.data.publications | where_exp: "item", "item.lines contains line.id" | sort: "year" | reverse %}
+    {% if line_pubs.size > 0 %}
+    <h4>Publications in this line</h4>
+    <ul class="pub-compact-list">
+      {% for pub in line_pubs %}
+        {% include pub-compact.html pub=pub %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+  {% endfor %}
+
+  <h2>Research methods and toolkit</h2>
+  <ul>
+    <li><strong>Industrial ecology</strong> — dynamic material flow analysis (MFA) and life cycle assessment (LCA), to trace materials and impacts across supply chains and life stages.</li>
+    <li><strong>Statistical methods</strong> — econometrics and causal inference, machine learning, and uncertainty quantification (Monte Carlo, scenario analysis) for forecasting and for filling data gaps.</li>
+    <li><strong>Engineering modeling</strong> — optimization and first-principles process models, grounded in the physics of the systems being modeled.</li>
+    <li><strong>Spatial analysis</strong> — GIS, to place impacts where they actually occur.</li>
+    <li><strong>Open computation</strong> — R, Python, and Julia; public code and data for every publication.</li>
+    <li><strong>Policy analysis</strong> — connect insights from my research into relevant, evidence-driven and actionable policy recommendations.</li>
+  </ul>
+
+  <h2>Data and code</h2>
+  <p>I believe in transparency and reproducibility in science, so I aim for a public code and data repository for all my publications. You can find most of the model code and data on my <a href="https://github.com/pmbusch">GitHub</a>. Please let me know if you have any questions.</p>
+
+</div>
