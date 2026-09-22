@@ -1,0 +1,25 @@
+name: "Pablo Busch"
+title: "Assistant Professor, Pontificia Universidad Católica de Chile"
+email: "pmbusch@uc.cl"
+affiliation: "Pontificia Universidad Católica de Chile"
+affiliation_url: "https://www.uc.cl/"
+location: "Santiago, Chile"
+alumni_of: "University of California, Davis"
+avatar: "/images/avatar.jpg"
+
+links:
+  - label: "Email"
+    url: "mailto:pmbusch@uc.cl"
+    icon: email
+  - label: "Google Scholar"
+    url: "https://scholar.google.cl/citations?user=1klIiDgAAAAJ&hl=es&oi=ao"
+    icon: scholar
+  - label: "ORCID"
+    url: "https://orcid.org/0000-0002-9069-1401"
+    icon: orcid
+  - label: "GitHub"
+    url: "https://github.com/pmbusch"
+    icon: github
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/pmbusch/"
+    icon: linkedin

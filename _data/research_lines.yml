@@ -1,0 +1,37 @@
+# Four research lines. `color` values are used for chips, section headers, and
+# card accents; light/dark variants are handled in CSS via var(--line-<id>).
+- id: minerals
+  label: "Energy transition minerals"
+  description: "How global demand for energy transition minerals (e.g., lithium, copper) translates into specific mines, in specific places, at specific times."
+  color: "#a1560c"
+  image: "" # TODO: user provides file — a map, see /images/research/
+  image_alt: ""
+  image_caption: ""
+  image_credit: ""
+
+- id: circular
+  label: "Circular economy"
+  description: "How much of our material demand can be avoided through system improvements, efficiency gains, longevity extension and recovery at end-of-life."
+  color: "#15803d"
+  image: "" # TODO: user provides file — a battery or recycling photo
+  image_alt: ""
+  image_caption: ""
+  image_credit: ""
+
+- id: health
+  label: "Environmental impacts and public health"
+  description: "Where the costs of these systems land, and on whom."
+  color: "#0e7490"
+  image: "" # TODO: user specifies figure number from Busch et al. (2024), Communications Earth & Environment, https://doi.org/10.1038/s43247-024-01634-x — license confirmed CC BY 4.0 via Crossref metadata, so once a figure number is chosen it can be used with caption "Figure from Busch et al. (2024), Communications Earth & Environment, CC BY 4.0."
+  image_alt: ""
+  image_caption: ""
+  image_credit: ""
+
+- id: decarb
+  label: "Decarbonization and life cycle assessment"
+  description: "Policies and life cycle emissions of hard-to-abate sectors and energy carriers, such as cement and hydrogen."
+  color: "#6d28d9"
+  image: "" # TODO: user decides figure — empty styled placeholder for now
+  image_alt: ""
+  image_caption: ""
+  image_credit: ""

@@ -1,0 +1,13 @@
+- code: SUS1000
+  title: "Sustainability"
+  audience: "Open to all students"
+  semesters: ["2026-2"]
+  description: >
+    An interdisciplinary course on why societies have struggled to reconcile social
+    aspirations with ecological limits, and how new trajectories are possible. Students
+    explore the main dimensions of the socio-environmental crisis and solutions at global
+    and local scales. The course uses simulations, role-playing, hands-on activities, and
+    open conversation, with reading portfolios and a semester-long project that includes
+    field trips.
+
+# TODO: add any additional courses taught (code, title, audience, semesters, description).

@@ -1,0 +1,45 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% seo %}
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+  <link rel="icon" type="image/svg+xml" href="{{ '/images/favicon.svg' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon-180x180.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/images/manifest.json' | relative_url }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+
+  {% if page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.data.profile.name }}",
+    "jobTitle": "{{ site.data.profile.title }}",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "{{ site.data.profile.affiliation }}"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "{{ site.data.profile.alumni_of }}"
+    },
+    "email": "{{ site.data.profile.email }}",
+    "image": "{{ site.data.profile.avatar | absolute_url }}",
+    "url": "{{ site.url }}",
+    "sameAs": [
+      "https://orcid.org/0000-0002-9069-1401",
+      "https://scholar.google.cl/citations?user=1klIiDgAAAAJ&hl=es&oi=ao",
+      "https://github.com/pmbusch",
+      "https://www.linkedin.com/in/pmbusch/"
+    ],
+    "knowsAbout": {{ site.data.research_lines | map: "label" | jsonify }}
+  }
+  </script>
+  {% endif %}
+</head>

@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <p class="site-footer__name">{{ site.data.profile.name }}</p>
+    <nav class="site-footer__links" aria-label="Social">
+      {% for link in site.data.profile.links %}
+      <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}
+      {% endfor %}
+    </nav>
+    <p class="site-footer__updated">Last updated {{ site.time | date: "%B %-d, %Y" }}</p>
+  </div>
+</footer>
