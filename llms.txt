@@ -1,0 +1,16 @@
+---
+permalink: /llms.txt
+layout: null
+---
+# {{ site.data.profile.name }}
+
+Pablo Busch is an Assistant Professor at Pontificia Universidad Católica de Chile, jointly appointed in Civil Engineering and the Institute for Sustainable Development. His research treats the energy transition primarily as a materials problem, using quantitative models — dynamic material flow analysis, life cycle assessment, econometrics, and scenario analysis — to study four connected lines: (1) energy transition minerals, how global mineral demand translates into specific mines, places, and times; (2) circular economy, how much material demand can be avoided through efficiency, longevity, and end-of-life recovery; (3) environmental impacts and public health, where the costs of these systems land, and on whom; and (4) decarbonization and life cycle assessment, policies and life cycle emissions for hard-to-abate sectors such as cement and hydrogen. He holds a PhD in Energy Systems, an M.Sc. in Statistics, and an M.Sc. in Environmental Policy & Management from UC Davis, and an undergraduate degree in Industrial and Systems Engineering from Pontificia Universidad Católica de Chile.
+
+## Pages
+
+- [Home]({{ "/" | absolute_url }}): profile, research lines, selected publications
+- [Research]({{ "/research/" | absolute_url }}): detailed description of the four research lines
+- [Publications]({{ "/publications/" | absolute_url }}): full list of journal articles, reports, and policy briefs
+- [Teaching]({{ "/teaching/" | absolute_url }}): courses taught
+- [CV]({{ "/cv/" | absolute_url }}): curriculum vitae ([PDF]({{ "/files/Resume_Busch.pdf" | absolute_url }}))
+- [Join & Contact]({{ "/contact/" | absolute_url }}): information for prospective students and postdocs, and contact details
