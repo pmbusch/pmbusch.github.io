@@ -35,6 +35,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
+# Google Analytics (GA4). Set to blank/remove to disable the tracking snippet.
+google_analytics: "G-6ET5BV7C1L"
+
 # jekyll-seo-tag defaults
 twitter:
   card: summary_large_image
