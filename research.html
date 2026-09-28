@@ -61,7 +61,7 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
   {% for line in site.data.research_lines %}
   <section class="research-line" id="{{ line.id }}">
     <div class="research-line__header" style="--line-color: {{ line.color }};">
-      <h2>{{ line.label }}</h2>
+      <h2>{% include icon.html name=line.id %}{{ line.label }}</h2>
       <p>{{ line.description }}</p>
     </div>
 

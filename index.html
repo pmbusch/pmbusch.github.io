@@ -45,10 +45,12 @@ description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Ca
       {% endif %}
     {% endfor %}
     <div class="line-card" style="--card-color: {{ line.color }};">
-      <h3 class="line-card__label">{{ line.label }}</h3>
+      <h3 class="line-card__label">{% include icon.html name=line.id %}{{ line.label }}</h3>
       <div class="line-card__media">
-        {% if line.image and line.image != "" %}
-        <img src="{{ line.image | relative_url }}" alt="{{ line.image_alt }}">
+        {% if line.card_image and line.card_image != "" %}
+        <img src="{{ line.card_image | relative_url }}" alt="{{ line.image_alt }}" width="1200" height="675" loading="lazy">
+        {% elsif line.image and line.image != "" %}
+        <img src="{{ line.image | relative_url }}" alt="{{ line.image_alt }}" loading="lazy">
         {% else %}
         <div class="line-card__placeholder">Image coming soon</div>
         {% endif %}

@@ -5,6 +5,7 @@
   description: "How global demand for energy transition minerals (e.g., lithium, copper) translates into specific mines, in specific places, at specific times."
   color: "#a1560c"
   image: "/images/research/minerals-map.webp"
+  card_image: "/images/research/minerals-map-card.webp" # 1200x675 (16:9), cropped for the home-page card
   image_alt: "World map of copper, cobalt, lithium, and nickel resource sites, colored by regional water stress, with zoomed-in panels for each mineral."
   image_caption: "Global mine sites and reserves for copper, cobalt, lithium, and nickel, overlaid with regional water stress."
   image_credit: "" # TODO: confirm source publication for citation, if any
@@ -14,6 +15,7 @@
   description: "How much of our material demand can be avoided through system improvements, efficiency gains, longevity extension and recovery at end-of-life."
   color: "#127038"
   image: "/images/research/circular-supply-chains.webp"
+  card_image: "/images/research/circular-supply-chains-card.webp" # 1200x675 (16:9), cropped for the home-page card
   image_alt: "Heatmap of vehicle trade flows between countries, grouped into regional market segments, showing percentage of origin by destination country."
   image_caption: "Vehicle trade flows between countries — used-vehicle trade can move future battery scrap out of reach of the countries that need it."
   image_credit: "" # TODO: confirm source publication for citation, if any
@@ -23,6 +25,7 @@
   description: "Where the costs of these systems land, and on whom."
   color: "#c2255c"
   image: "/images/research/health-pm25-mortality.webp"
+  card_image: "/images/research/health-pm25-mortality-card.webp" # 1200x675 (16:9), cropped for the home-page card
   image_alt: "Map of mean PM2.5 concentration across Chilean regions next to a forest plot of the percentage change in monthly mortality for a 10 micrograms per cubic meter increase in PM2.5, by region."
   image_caption: "Figure from Busch et al. (2024), Communications Earth & Environment, CC BY 4.0."
   image_credit: ""
@@ -32,6 +35,7 @@
   description: "Policies and life cycle emissions of hard-to-abate sectors and energy carriers, such as cement and hydrogen."
   color: "#1e40af"
   image: "/images/research/decarb-hydrogen-carbon-intensity.webp"
+  card_image: "/images/research/decarb-hydrogen-carbon-intensity-card.webp" # 1200x675 (16:9), cropped for the home-page card
   image_alt: "Dot plot comparing hydrogen production carbon intensity across pathways — steam reforming, coal and biomass gasification, electrolysis, and thermal water splitting — in grams CO2-equivalent per megajoule of hydrogen."
   image_caption: "Figure from Busch, Kendall & Lipman (2023), Renewable and Sustainable Energy Reviews."
   image_credit: ""

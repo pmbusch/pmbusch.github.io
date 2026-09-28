@@ -19,7 +19,7 @@ description: "Peer-reviewed articles and reports by Pablo Busch on energy transi
     <li><button class="filter-chip filter-chip--all" data-filter-kind="all" aria-pressed="true">All <span class="count">({{ all_pubs.size }})</span></button></li>
     {% for line in site.data.research_lines %}
       {% assign line_pubs = all_pubs | where_exp: "item", "item.lines contains line.id" %}
-      <li><button class="filter-chip" data-filter-kind="line" data-filter-value="{{ line.id }}" aria-pressed="false" style="--chip-color: {{ line.color }};">{{ line.label }} <span class="count">({{ line_pubs.size }})</span></button></li>
+      <li><button class="filter-chip" data-filter-kind="line" data-filter-value="{{ line.id }}" aria-pressed="false" style="--chip-color: {{ line.color }};">{% include icon.html name=line.id %}{{ line.label }} <span class="count">({{ line_pubs.size }})</span></button></li>
     {% endfor %}
     <li><button class="filter-chip filter-chip--type" data-filter-kind="type" data-filter-value="article" aria-pressed="false">Articles <span class="count">({{ articles.size }})</span></button></li>
     <li><button class="filter-chip filter-chip--type" data-filter-kind="type" data-filter-value="report" aria-pressed="false">Reports &amp; policy briefs <span class="count">({{ reports.size }})</span></button></li>
