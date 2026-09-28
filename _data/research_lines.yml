@@ -1,41 +1,52 @@
-# Four research lines. `color` values are used for chips, section headers, and
-# card accents; light/dark variants are handled in CSS via var(--line-<id>).
+# Four research lines. The colors actually rendered come from the CSS
+# variables --line-<id> in assets/css/main.css (with light and dark variants);
+# `color` here is the light-mode value, kept in sync for reference.
+# `image_link`: paper or preprint the figure comes from; the figure becomes a
+# link to it on the home page and research page. Leave "" for no link.
 - id: minerals
   label: "Energy transition minerals"
+  short_label: "Minerals" # used where space is tight (publications Venn diagram)
   description: "How global demand for energy transition minerals (e.g., lithium, copper) translates into specific mines, in specific places, at specific times."
   color: "#a1560c"
   image: "/images/research/minerals-map.webp"
-  card_image: "/images/research/minerals-map-card.webp" # 1200x675 (16:9), cropped for the home-page card
+  card_image: "/images/research/minerals-map-card.webp" # home-page version (panel a only), from 1-Map_minerals-home.png
+  image_link: "https://www.researchsquare.com/article/rs-11011048/v1" # preprint
   image_alt: "World map of copper, cobalt, lithium, and nickel resource sites, colored by regional water stress, with zoomed-in panels for each mineral."
-  image_caption: "Global mine sites and reserves for copper, cobalt, lithium, and nickel, overlaid with regional water stress."
-  image_credit: "" # TODO: confirm source publication for citation, if any
+  image_caption: "Global mine sites and reserves for copper, cobalt, lithium, and nickel, overlaid with regional water stress. Figure from a preprint on Research Square."
+  image_credit: ""
 
 - id: circular
   label: "Circular economy"
+  short_label: "Circular economy" # used where space is tight (publications Venn diagram)
   description: "How much of our material demand can be avoided through system improvements, efficiency gains, longevity extension and recovery at end-of-life."
   color: "#127038"
-  image: "/images/research/circular-supply-chains.webp"
-  card_image: "/images/research/circular-supply-chains-card.webp" # 1200x675 (16:9), cropped for the home-page card
-  image_alt: "Heatmap of vehicle trade flows between countries, grouped into regional market segments, showing percentage of origin by destination country."
-  image_caption: "Vehicle trade flows between countries — used-vehicle trade can move future battery scrap out of reach of the countries that need it."
-  image_credit: "" # TODO: confirm source publication for citation, if any
+  image: "/images/research/circular-recycling-capacity.webp"
+  card_image: "" # same figure on the home page
+  image_link: "https://doi.org/10.1016/j.resconrec.2026.109118"
+  image_alt: "Line chart of net battery pre-processing capacity in North America from 2025 to 2050 under scenarios such as reference, recycling, repurposing, long and short battery life, and LFP chemistry, showing growing undercapacity in all scenarios after about 2030."
+  image_caption: "Net battery pre-processing capacity in North America under shifting demand and circularity strategies. Figure from Busch et al. (2026), Resources, Conservation and Recycling."
+  image_credit: ""
 
 - id: health
   label: "Environmental impacts and public health"
+  short_label: "Health" # used where space is tight (publications Venn diagram)
   description: "Where the costs of these systems land, and on whom."
   color: "#c2255c"
   image: "/images/research/health-pm25-mortality.webp"
-  card_image: "/images/research/health-pm25-mortality-card.webp" # 1200x675 (16:9), cropped for the home-page card
+  card_image: "" # same figure on the home page
+  image_link: "https://doi.org/10.1038/s43247-024-01634-x"
   image_alt: "Map of mean PM2.5 concentration across Chilean regions next to a forest plot of the percentage change in monthly mortality for a 10 micrograms per cubic meter increase in PM2.5, by region."
   image_caption: "Figure from Busch et al. (2024), Communications Earth & Environment, CC BY 4.0."
   image_credit: ""
 
 - id: decarb
   label: "Decarbonization and life cycle assessment"
+  short_label: "Decarbonization" # used where space is tight (publications Venn diagram)
   description: "Policies and life cycle emissions of hard-to-abate sectors and energy carriers, such as cement and hydrogen."
   color: "#1e40af"
   image: "/images/research/decarb-hydrogen-carbon-intensity.webp"
-  card_image: "/images/research/decarb-hydrogen-carbon-intensity-card.webp" # 1200x675 (16:9), cropped for the home-page card
+  card_image: "/images/research/decarb-hydrogen-carbon-intensity-card.webp" # home-page version, from 4-decarb-home.png
+  image_link: "https://doi.org/10.1016/j.rser.2023.113588"
   image_alt: "Dot plot comparing hydrogen production carbon intensity across pathways — steam reforming, coal and biomass gasification, electrolysis, and thermal water splitting — in grams CO2-equivalent per megajoule of hydrogen."
-  image_caption: "Figure from Busch, Kendall & Lipman (2023), Renewable and Sustainable Energy Reviews."
+  image_caption: "Retrieved literature values for carbon intensity of different hydrogen production pathways. Figure from Busch, Kendall & Lipman (2023), Renewable and Sustainable Energy Reviews."
   image_credit: ""

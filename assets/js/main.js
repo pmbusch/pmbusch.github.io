@@ -11,6 +11,28 @@
     });
   }
 
+  // Light/dark toggle. The saved choice is applied early by an inline script in
+  // head.html; here we only flip it and remember it.
+  var themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    var darkQuery = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+    var isDark = function () {
+      var t = document.documentElement.getAttribute("data-theme");
+      if (t) return t === "dark";
+      return !!(darkQuery && darkQuery.matches);
+    };
+    var syncLabel = function () {
+      themeToggle.setAttribute("aria-pressed", isDark() ? "true" : "false");
+    };
+    themeToggle.addEventListener("click", function () {
+      var next = isDark() ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+      syncLabel();
+    });
+    syncLabel();
+  }
+
   // Research page: outline sidebar scroll-spy (highlights the section in view)
   var outlineBoxes = Array.prototype.slice.call(document.querySelectorAll(".outline-box"));
   var researchSections = Array.prototype.slice.call(document.querySelectorAll(".research-line"));

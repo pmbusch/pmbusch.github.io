@@ -1,0 +1,45 @@
+{% comment %}
+  Venn diagram of scientific articles by research line, computed at build time.
+  Minerals / circular / decarb are drawn as a 3-set Venn (they share papers);
+  health is drawn apart since it currently shares none. If a health paper is
+  ever tagged with another line too, it is still counted in the health circle
+  and noted underneath as "shared". Circles link to the filtered list.
+{% endcomment %}
+{% assign articles = include.articles %}
+{% assign keys = "" | split: "" %}
+{% for pub in articles %}
+  {% assign k = pub.lines | sort | join: "+" %}
+  {% assign keys = keys | push: k %}
+{% endfor %}
+{% assign line_m = site.data.research_lines | where: "id", "minerals" | first %}
+{% assign line_c = site.data.research_lines | where: "id", "circular" | first %}
+{% assign line_d = site.data.research_lines | where: "id", "decarb" | first %}
+{% assign line_h = site.data.research_lines | where: "id", "health" | first %}
+{% assign health_all = articles | where_exp: "item", "item.lines contains 'health'" | size %}
+{% assign health_only = keys | where_exp: "k", "k == 'health'" | size %}
+{% assign health_shared = health_all | minus: health_only %}
+{% capture aria %}Venn diagram of {{ articles.size }} scientific articles by research line.{% endcapture %}
+<figure class="pub-venn">
+  <svg viewBox="0 0 450 272" role="img" aria-label="{{ aria | strip }}">
+    <a href="?line=minerals" aria-label="{{ line_m.label }}"><circle cx="120" cy="100" r="72" style="--c: var(--line-minerals)"/></a>
+    <a href="?line=circular" aria-label="{{ line_c.label }}"><circle cx="200" cy="100" r="72" style="--c: var(--line-circular)"/></a>
+    <a href="?line=decarb" aria-label="{{ line_d.label }}"><circle cx="160" cy="169" r="72" style="--c: var(--line-decarb)"/></a>
+    <a href="?line=health" aria-label="{{ line_h.label }}"><circle cx="370" cy="120" r="58" style="--c: var(--line-health)"/></a>
+
+    <text class="pub-venn__label" x="72" y="20" style="fill: var(--line-minerals)">{{ line_m.short_label }}</text>
+    <text class="pub-venn__label" x="248" y="20" style="fill: var(--line-circular)">{{ line_c.short_label }}</text>
+    <text class="pub-venn__label" x="160" y="264" style="fill: var(--line-decarb)">{{ line_d.short_label }}</text>
+    <text class="pub-venn__label" x="370" y="50" style="fill: var(--line-health)">{{ line_h.short_label }}</text>
+
+    {% assign regions = "minerals|92|90,circular|228|90,decarb|160|207,circular+minerals|160|78,decarb+minerals|117|154,circular+decarb|203|154,circular+decarb+minerals|160|129" | split: "," %}
+    {% for r in regions %}
+      {% assign parts = r | split: "|" %}
+      {% assign key = parts[0] %}
+      {% assign n = keys | where_exp: "k", "k == key" | size %}
+      {% if n > 0 %}<text class="pub-venn__count" x="{{ parts[1] }}" y="{{ parts[2] }}">{{ n }}</text>{% endif %}
+    {% endfor %}
+    {% if health_all > 0 %}<text class="pub-venn__count" x="370" y="129">{{ health_all }}</text>{% endif %}
+    {% if health_shared > 0 %}<text class="pub-venn__note" x="370" y="198">{{ health_shared }} shared with other lines</text>{% endif %}
+  </svg>
+  <figcaption><strong>{{ articles.size }} scientific articles</strong> by research line; overlaps are articles that belong to more than one line. Click a circle to filter the list.</figcaption>
+</figure>

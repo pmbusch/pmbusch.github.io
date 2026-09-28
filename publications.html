@@ -5,28 +5,34 @@ permalink: /publications/
 description: "Peer-reviewed articles and reports by Pablo Busch on energy transition minerals, circular economy, environmental health, and decarbonization."
 ---
 <div class="wrap">
-  <h1>Publications</h1>
-  <p>
-    You can also find my articles on my <a href="https://scholar.google.cl/citations?user=1klIiDgAAAAJ&amp;hl=es&amp;oi=ao">Google Scholar</a> profile
-    (h-index = {{ site.data.profile.scholar_stats.h_index }}, citations = {{ site.data.profile.scholar_stats.citations }}).
-  </p>
-
   {% assign all_pubs = site.data.publications %}
   {% assign articles = all_pubs | where: "type", "article" %}
   {% assign reports = all_pubs | where: "type", "report" %}
+
+  <div class="pub-intro">
+    <div>
+    <h1>Publications</h1>
+    <p>
+      You can also find my articles on my <a href="https://scholar.google.cl/citations?user=1klIiDgAAAAJ&amp;hl=es&amp;oi=ao">Google Scholar</a> profile
+      (h-index = {{ site.data.profile.scholar_stats.h_index }}, citations = {{ site.data.profile.scholar_stats.citations }}).
+    </p>
+    </div>
+    {% include pub-venn.html articles=articles %}
+  </div>
+
 
   <ul class="filter-bar" role="group" aria-label="Filter publications">
     <li><button class="filter-chip filter-chip--all" data-filter-kind="all" aria-pressed="true">All <span class="count">({{ all_pubs.size }})</span></button></li>
     {% for line in site.data.research_lines %}
       {% assign line_pubs = all_pubs | where_exp: "item", "item.lines contains line.id" %}
-      <li><button class="filter-chip" data-filter-kind="line" data-filter-value="{{ line.id }}" aria-pressed="false" style="--chip-color: {{ line.color }};">{% include icon.html name=line.id %}{{ line.label }} <span class="count">({{ line_pubs.size }})</span></button></li>
+      <li><button class="filter-chip" data-filter-kind="line" data-filter-value="{{ line.id }}" aria-pressed="false" style="--chip-color: var(--line-{{ line.id }});">{% include icon.html name=line.id %}{{ line.label }} <span class="count">({{ line_pubs.size }})</span></button></li>
     {% endfor %}
-    <li><button class="filter-chip filter-chip--type" data-filter-kind="type" data-filter-value="article" aria-pressed="false">Articles <span class="count">({{ articles.size }})</span></button></li>
+    <li><button class="filter-chip filter-chip--type" data-filter-kind="type" data-filter-value="article" aria-pressed="false">Scientific Articles <span class="count">({{ articles.size }})</span></button></li>
     <li><button class="filter-chip filter-chip--type" data-filter-kind="type" data-filter-value="report" aria-pressed="false">Reports &amp; policy briefs <span class="count">({{ reports.size }})</span></button></li>
   </ul>
 
   <div id="pub-list">
-    <h2 class="pub-group-header">Peer-reviewed journal articles</h2>
+    <h2 class="pub-group-header">Scientific Articles</h2>
     {% assign article_years = articles | map: "year" | uniq | sort | reverse %}
     {% for y in article_years %}
       <h3 class="pub-year-header">{{ y }}</h3>

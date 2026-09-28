@@ -25,7 +25,9 @@ description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Ca
 
   <div class="bio">
     <p>I am an Assistant Professor at Pontificia Universidad Católica de Chile, in <a href="https://www.ing.uc.cl/ingenieria-y-gestion-construccion/">Civil Engineering</a> and in the <a href="https://desarrollosustentable.uc.cl/">Institute for Sustainable Development</a>.</p>
-    <p>My research starts from one premise: the energy transition is, above all, a materials problem. I build quantitative models to understand our future material needs, how circularity can reduce that demand, and who bears the environmental and health costs in a clean energy future. My goal is to provide qualitative recommendations towards a sustainable energy transition.</p>
+    <p>My research starts from one premise: the energy transition is, above all, a materials problem.</p>
+    <p>I build quantitative models to understand our future material needs, how circularity can reduce that demand, and who bears the environmental and health costs in a clean energy future.</p>
+    <p>My goal is to provide qualitative recommendations towards a sustainable energy transition.</p>
   </div>
 
   <!-- The 4 curated "selected" publications, used to feature one per research
@@ -34,7 +36,7 @@ description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Ca
        and circular). -->
   {% assign selected_ids = "busch2025lithium,busch2025sufficiency,busch2024pm25,busch2022cement" | split: "," %}
 
-  <h2>Research lines</h2>
+  <h2 class="home-section-title">Research lines</h2>
   <div class="line-grid">
     {% for line in site.data.research_lines %}
     {% assign featured = nil %}
@@ -44,19 +46,20 @@ description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Ca
         {% assign featured = candidate %}
       {% endif %}
     {% endfor %}
-    <div class="line-card" style="--card-color: {{ line.color }};">
+    <div class="line-card" style="--card-color: var(--line-{{ line.id }});">
       <h3 class="line-card__label">{% include icon.html name=line.id %}{{ line.label }}</h3>
+      <p class="line-card__desc">{{ line.description }}</p>
       <div class="line-card__media">
-        {% if line.card_image and line.card_image != "" %}
-        <img src="{{ line.card_image | relative_url }}" alt="{{ line.image_alt }}" width="1200" height="675" loading="lazy">
-        {% elsif line.image and line.image != "" %}
-        <img src="{{ line.image | relative_url }}" alt="{{ line.image_alt }}" loading="lazy">
-        {% else %}
+        {% capture card_img %}{% if line.card_image and line.card_image != "" %}<img src="{{ line.card_image | relative_url }}" alt="{{ line.image_alt }}" loading="lazy">{% elsif line.image and line.image != "" %}<img src="{{ line.image | relative_url }}" alt="{{ line.image_alt }}" loading="lazy">{% endif %}{% endcapture %}
+        {% if card_img == "" %}
         <div class="line-card__placeholder">Image coming soon</div>
+        {% elsif line.image_link and line.image_link != "" %}
+        <a class="figure-link" href="{{ line.image_link }}" title="Open the paper this figure comes from">{{ card_img }}<span class="figure-link__badge">Paper ↗</span></a>
+        {% else %}
+        {{ card_img }}
         {% endif %}
       </div>
       <div class="line-card__body">
-        <p class="line-card__desc">{{ line.description }}</p>
         {% if featured %}
         <p class="line-card__featured">
           <span class="line-card__featured-label">Selected publication</span>

@@ -10,13 +10,13 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
   <p>My research starts from one premise: <strong>the energy transition is, above all, a materials problem</strong>. Decarbonization replaces fossil fuel <em>flows</em> with material <em>stocks</em>, and the costs of that shift are unevenly distributed across countries, regions, and communities.</p>
 
   <h2>Research methods and toolkit</h2>
-  <ul>
-    <li><strong>Industrial ecology</strong> — dynamic material flow analysis (MFA) and life cycle assessment (LCA), to trace materials and impacts across supply chains and life stages.</li>
-    <li><strong>Statistical methods</strong> — econometrics and causal inference, machine learning, and uncertainty quantification (Monte Carlo, scenario analysis) for forecasting and for filling data gaps.</li>
-    <li><strong>Engineering modeling</strong> — optimization and first-principles process models, grounded in the physics of the systems being modeled.</li>
-    <li><strong>Spatial analysis</strong> — GIS, to place impacts where they actually occur.</li>
-    <li><strong>Open computation</strong> — R, Python, and Julia; public code and data for every publication.</li>
-    <li><strong>Policy analysis</strong> — connect insights from my research into relevant, evidence-driven and actionable policy recommendations.</li>
+  <ul class="method-list">
+    <li>{% include icon.html name="method-ecology" %}<span><strong>Industrial ecology</strong> — dynamic material flow analysis (MFA) and life cycle assessment (LCA), to trace materials and impacts across supply chains and life stages.</span></li>
+    <li>{% include icon.html name="method-stats" %}<span><strong>Statistical methods</strong> — econometrics and causal inference, machine learning, and uncertainty quantification (Monte Carlo, scenario analysis) for forecasting and for filling data gaps.</span></li>
+    <li>{% include icon.html name="method-engineering" %}<span><strong>Engineering modeling</strong> — optimization and first-principles process models, grounded in the physics of the systems being modeled.</span></li>
+    <li>{% include icon.html name="method-spatial" %}<span><strong>Spatial analysis</strong> — GIS, to place impacts where they actually occur.</span></li>
+    <li>{% include icon.html name="method-policy" %}<span><strong>Policy analysis</strong> — connect insights from my research into relevant, evidence-driven and actionable policy recommendations.</span></li>
+    <li>{% include icon.html name="method-code" %}<span><strong>Open computation</strong> — R, Python, and Julia; public code and data for every publication.</span></li>
   </ul>
 
   <h2>Data and code</h2>
@@ -31,9 +31,8 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
     with the third covering both public health AND decarbonization/LCA. It has
     been mapped onto the site's 4 canonical research lines as follows: original
     section 1 -> minerals, section 2 -> circular, section 3 -> health (its
-    primary framing). The "decarb" line does not have its own dedicated
-    narrative paragraph in the original text —
-    see the flag in that section below and in the final report.
+    primary framing). The "decarb" line had no section in the original text;
+    its question/approach paragraphs were drafted later from its publications.
   -->
 
   {% assign max_line_count = 1 %}
@@ -50,7 +49,7 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
         {% comment %} Heat is kept in a 15-40% range (not 0-100%) so the tinted
         background never gets saturated enough to hurt text contrast. {% endcomment %}
         {% assign heat = count | times: 25 | divided_by: max_line_count | plus: 15 %}
-        <a href="#{{ line.id }}" class="outline-box" data-target="{{ line.id }}" style="--line-color: {{ line.color }}; --heat: {{ heat }}%;">
+        <a href="#{{ line.id }}" class="outline-box" data-target="{{ line.id }}" style="--line-color: var(--line-{{ line.id }}); --heat: {{ heat }}%;">
           <span class="outline-box__count">{{ count }}</span>
           <span class="outline-box__label">{{ line.label }}</span>
         </a>
@@ -60,15 +59,19 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
     <div class="research-sections">
   {% for line in site.data.research_lines %}
   <section class="research-line" id="{{ line.id }}">
-    <div class="research-line__header" style="--line-color: {{ line.color }};">
+    <div class="research-line__header" style="--line-color: var(--line-{{ line.id }});">
       <h2>{% include icon.html name=line.id %}{{ line.label }}</h2>
       <p>{{ line.description }}</p>
     </div>
 
     {% if line.image and line.image != "" %}
     <figure class="research-line__figure">
+      {% if line.image_link and line.image_link != "" %}
+      <a class="figure-link" href="{{ line.image_link }}" title="Open the paper this figure comes from"><img src="{{ line.image | relative_url }}" alt="{{ line.image_alt }}"><span class="figure-link__badge">Paper ↗</span></a>
+      {% else %}
       <img src="{{ line.image | relative_url }}" alt="{{ line.image_alt }}">
-      <figcaption>{{ line.image_caption }}{% if line.image_credit and line.image_credit != "" %} — {{ line.image_credit }}{% endif %}</figcaption>
+      {% endif %}
+      <figcaption>{{ line.image_caption }}{% if line.image_credit and line.image_credit != "" %} — {{ line.image_credit }}{% endif %}{% if line.image_link and line.image_link != "" %} <a href="{{ line.image_link }}">Read the paper</a>.{% endif %}</figcaption>
     </figure>
     {% else %}
     <div class="figure-placeholder">Figure coming soon.</div>
@@ -80,54 +83,44 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
 
     <p><strong>How I approach it.</strong> Dynamic material flow analysis linked to supply-side expansion modeling at country and deposit resolution, coupled to bottom-up vehicle and battery demand models. Because these projections rest on deeply uncertain parameters — adoption rates, chemistry shares, recovery rates — I treat uncertainty explicitly through large-scale Monte Carlo scenario analysis rather than reporting single trajectories.</p>
 
-    <p><strong>Representative work.</strong></p>
-    <ul>
-      <li>Effects of demand and recycling on the when and where of lithium extraction — <em>Nature Sustainability</em> (2025). <a href="https://doi.org/10.1038/s41893-025-01561-5">10.1038/s41893-025-01561-5</a></li>
-      <li>Who will have enough? Battery mineral demand and sufficiency in vehicle producing countries — <em>Environmental Science &amp; Technology</em> (2025). <a href="https://doi.org/10.1021/acs.est.5c12420">10.1021/acs.est.5c12420</a></li>
-      <li>The electric vehicle transition: effects on copper supply dynamics in a net-zero future — <em>Resources, Conservation and Recycling</em> (2026). <a href="https://doi.org/10.1016/j.resconrec.2026.108798">10.1016/j.resconrec.2026.108798</a></li>
-      <li>Future of the global electric vehicle supply chain — <em>Transportation Research Record</em> (2024). <a href="https://doi.org/10.1177/03611981241244797">10.1177/03611981241244797</a></li>
-      <li>Shifting manufacturing: electric vehicle supply strategy using the Model for International EV Trade — <em>Journal of Cleaner Production</em> (2024). <a href="https://doi.org/10.1016/j.jclepro.2024.144357">10.1016/j.jclepro.2024.144357</a></li>
-    </ul>
-
     {% when "circular" %}
     <p><strong>The question.</strong> Every ton of material recovered, avoided, or used more efficiently is a ton that does not have to be extracted. How much of projected demand can circularity actually displace — and, just as important, <em>when</em>? Recycling depends on stocks that were built decades earlier, so timing is a physical constraint, not a policy choice. Where does used-vehicle trade move that future scrap out of reach of the countries that need it?</p>
 
     <p><strong>How I approach it.</strong> Stock-driven dynamic MFA to model retirement and recovery flows, combined with life cycle assessment to test whether a circularity strategy delivers a net environmental gain rather than shifting the burden. I model recycling infrastructure as a capacity that must be built ahead of the waste stream, not as a recovery rate assumed to exist.</p>
-
-    <p><strong>Representative work.</strong></p>
-    <ul>
-      <li>Future battery recycling in North America: capacity expansion under shifting demand and circularity strategies — <em>Resources, Conservation and Recycling</em> (2026). <a href="https://doi.org/10.1016/j.resconrec.2026.109118">10.1016/j.resconrec.2026.109118</a></li>
-      <li>Effects of demand and recycling on the when and where of lithium extraction — <em>Nature Sustainability</em> (2025). <a href="https://doi.org/10.1038/s41893-025-01561-5">10.1038/s41893-025-01561-5</a></li>
-      <li>Who will have enough? Battery mineral demand and sufficiency in vehicle producing countries — <em>Environmental Science &amp; Technology</em> (2025). <a href="https://doi.org/10.1021/acs.est.5c12420">10.1021/acs.est.5c12420</a></li>
-    </ul>
 
     {% when "health" %}
     <p><strong>The question.</strong> Decarbonization pathways are usually compared on climate metrics alone, but their costs and benefits also land locally — on air quality, on health, on specific populations. Which industrial decarbonization pathways actually deliver, once the full life cycle is accounted for rather than assumed? And what is the measurable health burden of the pollution these systems produce?</p>
 
     <p><strong>How I approach it.</strong> Two complementary sets of tools. For prospective questions, life cycle assessment and policy analysis to compare pathways in hard-to-abate sectors — cement, hydrogen, transport — and to identify which barriers are technological and which are institutional. For retrospective questions, econometric and causal-inference methods applied to observational exposure and mortality data, where the challenge is identification rather than projection.</p>
 
-    <p><strong>Representative work.</strong></p>
-    <ul>
-      <li>Life cycle performance and carbon handprint of lithium-ion batteries in electric vehicles — <em>Journal of Industrial Ecology</em> (2026). <a href="https://doi.org/10.1007/s44498-026-00112-1">10.1007/s44498-026-00112-1</a></li>
-      <li>Short-term exposure to fine particulate pollution and elderly mortality in Chile — <em>Communications Earth &amp; Environment</em> (2024). <a href="https://doi.org/10.1038/s43247-024-01634-x">10.1038/s43247-024-01634-x</a></li>
-      <li>Chronic exposure to fine particles (PM2.5) and mortality: evidence from Chile — <em>Environmental Epidemiology</em> (2023). <a href="https://doi.org/10.1097/EE9.0000000000000253">10.1097/EE9.0000000000000253</a></li>
-      <li>Literature review on policies to mitigate GHG emissions for cement and concrete — <em>Resources, Conservation and Recycling</em> (2022), 2024 Most Downloaded Paper Award. <a href="https://doi.org/10.1016/j.resconrec.2022.106278">10.1016/j.resconrec.2022.106278</a></li>
-      <li>A systematic review of life cycle greenhouse gas intensity values for hydrogen production pathways — <em>Renewable and Sustainable Energy Reviews</em> (2023). <a href="https://doi.org/10.1016/j.rser.2023.113588">10.1016/j.rser.2023.113588</a></li>
-      <li>Electrifying light vehicles in the United States shows emission reduction potential for all vehicle types and powertrains — <em>Communications Sustainability</em> (2026). <a href="https://doi.org/10.1038/s44458-025-00032-4">10.1038/s44458-025-00032-4</a></li>
-    </ul>
-
     {% when "decarb" %}
-    <p><em>The original research write-up above does not have a section written specifically for this line — its narrative (methods, framing) is combined with "Environmental impacts and public health" above, since several of the same publications and methods (life cycle assessment, policy analysis of cement and hydrogen) span both. See the auto-generated publication list below for this line's output. <strong>TODO:</strong> consider drafting a dedicated paragraph for this line.</em></p>
+    <!-- DRAFT (2026-09-28): written from this line's publications; review wording. -->
+    <p><strong>The question.</strong> Net-zero plans lean heavily on hard-to-abate sectors such as cement and on new energy carriers such as hydrogen, but their climate benefit depends on how they are produced — and published estimates of their life cycle emissions disagree widely. What are the actual emissions of these pathways, why do the numbers diverge so much, and which policies can realistically move these sectors toward net zero?</p>
+
+    <p><strong>How I approach it.</strong> Life cycle assessment, with an emphasis on systematically reviewing and harmonizing the existing literature: putting published values on a common basis to separate genuine differences between technologies from differences in methodological choices. I pair this with policy analysis — reviewing the evidence on which technical and policy levers (e.g., public procurement and performance-based standards for cement) can deliver reductions — and with fleet-level life cycle models to assess the full emissions impact of transitions such as vehicle electrification.</p>
     {% endcase %}
 
-    {% assign line_pubs = site.data.publications | where_exp: "item", "item.lines contains line.id" | sort: "year" | reverse %}
+    {% comment %} Sort: journals in _data/journal_rank.yml order (highest first,
+    newest first within a journal), then anything unlisted (reports), newest first. {% endcomment %}
+    {% assign line_all = site.data.publications | where_exp: "item", "item.lines contains line.id" | sort: "year" | reverse %}
+    {% assign ranked_names = site.data.journal_rank | map: "name" %}
+    {% assign line_pubs = "" | split: "" %}
+    {% for j in site.data.journal_rank %}
+      {% assign in_journal = line_all | where: "venue", j.name %}
+      {% assign line_pubs = line_pubs | concat: in_journal %}
+    {% endfor %}
+    {% for pub in line_all %}
+      {% unless ranked_names contains pub.venue %}{% assign line_pubs = line_pubs | push: pub %}{% endunless %}
+    {% endfor %}
     {% if line_pubs.size > 0 %}
-    <h4>Publications in this line</h4>
-    <ul class="pub-compact-list">
-      {% for pub in line_pubs %}
-        {% include pub-compact.html pub=pub %}
-      {% endfor %}
-    </ul>
+    <details class="pub-toggle" style="--line-color: var(--line-{{ line.id }});">
+      <summary>Publications in this line <span class="pub-toggle__count">{{ line_pubs.size }}</span></summary>
+      <ul class="pub-compact-list">
+        {% for pub in line_pubs %}
+          {% include pub-compact.html pub=pub %}
+        {% endfor %}
+      </ul>
+    </details>
     {% endif %}
   </section>
   {% endfor %}

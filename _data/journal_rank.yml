@@ -1,0 +1,20 @@
+# Journal order used to sort "Publications in this line" on the research page:
+# papers in journals higher on this list come first (ties broken by year,
+# newest first). Only the order matters — the impact factors in the comments
+# are approximate (Clarivate JCR, ~2024) and are NOT shown on the site; verify
+# and reorder freely. Any venue not listed here (e.g. reports) goes after all
+# listed journals, newest first. `name` must match `venue` in publications.yml.
+
+- name: "Nature Sustainability"                                   # ~27
+- name: "Renewable and Sustainable Energy Reviews"                # ~16
+- name: "Environmental Science & Technology"                      # ~11
+- name: "Resources, Conservation and Recycling"                   # ~11
+- name: "Journal of Cleaner Production"                           # ~10
+- name: "Communications Earth & Environment"                      # ~8
+- name: "Communications Sustainability"                           # new Nature Portfolio journal, no IF yet
+- name: "Transportation Research Part D: Transport and Environment" # ~7
+- name: "Journal of Industrial Ecology"                           # ~5
+- name: "Environmental Science: Advances"                         # new, ~4
+- name: "Environmental Epidemiology"                              # ~3
+- name: "Environmental Research: Infrastructure and Sustainability" # ~3
+- name: "Transportation Research Record"                          # ~2

@@ -1,21 +1,19 @@
-Research-line images go here as WebP, max width 1600px, with descriptive filenames
-(e.g. `minerals-map.webp`). After adding a file, update the matching entry in
-`_data/research_lines.yml` (`image`, `image_alt`, `image_caption`, `image_credit`).
+Research-line figures. The site only references the .webp files; the PNG/JPG
+sources next to them are the originals they were converted from.
 
-All 4 lines now have an image (added 2026-09-28):
-- `minerals` -> `minerals-map.webp`
-- `circular` -> `circular-supply-chains.webp`
-- `health` -> `health-pm25-mortality.webp` (figure from Busch et al. (2024),
-  Communications Earth & Environment, CC BY 4.0)
-- `decarb` -> `decarb-hydrogen-carbon-intensity.webp` (figure from Busch, Kendall
-  & Lipman (2023), Renewable and Sustainable Energy Reviews — license not
-  verified as open access; included as the paper's own author)
+Each line has a full figure (research page, max width 1600px) and, optionally,
+a separate home-page version (`card_image`, max width 1200px). The home-page
+card always shows the whole figure (no cropping), so a home version is only
+needed when a simpler/smaller cut reads better at card size. Paths, captions
+and the paper each figure links to live in `_data/research_lines.yml`.
 
-TODO: confirm the source publication (if any) for the minerals and circular
-images, so a proper citation can be added to `image_credit` in
-_data/research_lines.yml — couldn't identify these confidently from the figure
-content alone.
+| Line     | Research page (full)                      | Home page                                        | Source files                         |
+|----------|-------------------------------------------|--------------------------------------------------|--------------------------------------|
+| minerals | minerals-map.webp                         | minerals-map-card.webp                           | 1-Map_minerals.png, 1-Map_minerals-home.png |
+| circular | circular-recycling-capacity.webp          | (same as full)                                   | 2-circular.png                       |
+| health   | health-pm25-mortality.webp                | (same as full)                                   | 3-health.png                         |
+| decarb   | decarb-hydrogen-carbon-intensity.webp     | decarb-hydrogen-carbon-intensity-card.webp       | 4-decarb.png, 4-decarb-home.png      |
 
-The original source files (raw PNG/JPG, and the health .pptx) are still sitting
-in this folder alongside the processed .webp versions — say the word if you'd
-like them removed now that the site only references the .webp files.
+To replace a figure: save the new PNG here, convert it to WebP at the widths
+above (e.g. Pillow: `Image.open(p).convert("RGB").save(out, quality=85)` after
+resizing), and point `image` / `card_image` at it.

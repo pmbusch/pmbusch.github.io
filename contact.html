@@ -18,7 +18,7 @@ description: "Join Pablo Busch's research group at Pontificia Universidad Catól
       {% when "health" %}{% assign emoji = "🫁" %}
       {% when "decarb" %}{% assign emoji = "🏭" %}
     {% endcase %}
-    <li style="--item-color: {{ line.color }};">{{ emoji }} <strong>{{ line.label }}:</strong>
+    <li style="--item-color: var(--line-{{ line.id }});">{{ emoji }} <strong>{{ line.label }}:</strong>
       {% case line.id %}
         {% when "minerals" %}how mineral demand translates into specific mines, places, and times.
         {% when "circular" %}how much material demand can be avoided through efficiency, longevity, and recovery.
