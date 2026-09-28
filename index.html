@@ -11,6 +11,9 @@ description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Ca
     <div>
       <h1 class="hero__name">{{ site.data.profile.name }}</h1>
       <p class="hero__title">{{ site.data.profile.title }}</p>
+      {% for line in site.data.profile.credentials %}
+      <p class="hero__cred">{{ line }}</p>
+      {% endfor %}
     </div>
   </div>
 

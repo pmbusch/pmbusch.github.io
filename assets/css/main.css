@@ -259,7 +259,10 @@ main { min-height: 60vh; padding: 2rem 0 4rem; }
 }
 
 .hero__name { margin-bottom: 0.15rem; }
-.hero__title { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 0.9rem; }
+.hero__title { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 0.35rem; }
+.hero__cred { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.15rem; }
+.hero__cred a { color: inherit; }
+.hero__cred a:hover { color: var(--link); }
 
 .link-row {
   display: flex;

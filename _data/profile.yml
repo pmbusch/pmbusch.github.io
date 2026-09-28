@@ -6,6 +6,11 @@ location: "Santiago, Chile"
 alumni_of: "University of California, Davis"
 avatar: "/images/avatar.jpg"
 
+# Extra lines under the title on the home page (HTML allowed, for links).
+credentials:
+  - 'Ph.D. <a href="https://energy.ucdavis.edu/education/energy-graduate-group/">Energy Systems</a> and M.Sc. Statistics &amp; <a href="https://epm.ucdavis.edu/people/pablo-busch">Environmental Policy</a>, UC Davis'
+  - 'Former Postdoc, <a href="https://sustainablesolutions.stanford.edu/">Sustainable Solutions Lab</a>, Stanford Doerr School of Sustainability'
+
 # Google Scholar doesn't offer a public API and blocks most automated
 # scraping, so these are updated by hand from the profile URL below —
 # there's no reliable way to auto-fetch them on a static GitHub Pages site
