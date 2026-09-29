@@ -19,7 +19,6 @@ description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Ca
 
   <div class="link-row">
     {% for link in site.data.profile.links %}
-    {% if link.url == "" %}{% continue %}{% endif %}
     <a href="{{ link.url }}" class="icon-link">
       {% include icon.html name=link.icon %}
       <span>{{ link.label }}</span>

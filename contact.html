@@ -43,7 +43,7 @@ description: "Join Pablo Busch's research group at Pontificia Universidad Catól
     <dt>Links</dt>
     <dd>
       {% for link in site.data.profile.links %}
-        {% unless link.label == "Email" or link.url == "" %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endunless %}
+        {% unless link.label == "Email" %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endunless %}
       {% endfor %}
     </dd>
   </dl>
