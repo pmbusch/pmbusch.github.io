@@ -16,9 +16,9 @@
   image_credit: ""
   card_caption: "Battery mineral resources and their intersection with water-stressed basins." # short caption under the home-page figure
   # Overrides the home-page "Selected publication" (otherwise picked from
-  # publications.yml). TODO: replace the title with the preprint's exact title.
+  # publications.yml).
   featured_pub:
-    title: "Battery mineral resources and water stress (preprint)"
+    title: "Reducing water stress from mining battery materials"
     url: "https://www.researchsquare.com/article/rs-11011048/v1"
     venue: "Research Square"
     year: 2026

@@ -67,19 +67,6 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
       <p>{{ line.description }}</p>
     </div>
 
-    {% if line.image and line.image != "" %}
-    <figure class="research-line__figure">
-      {% if line.image_link and line.image_link != "" %}
-      <a class="figure-link" href="{{ line.image_link }}" title="Open the paper this figure comes from"><img src="{{ line.image | relative_url }}" alt="{{ line.image_alt }}"><span class="figure-link__badge">Paper ↗</span></a>
-      {% else %}
-      <img src="{{ line.image | relative_url }}" alt="{{ line.image_alt }}">
-      {% endif %}
-      <figcaption>{{ line.image_caption }}{% if line.image_credit and line.image_credit != "" %} — {{ line.image_credit }}{% endif %}{% if line.image_link and line.image_link != "" %} <a href="{{ line.image_link }}">Read the paper</a>.{% endif %}</figcaption>
-    </figure>
-    {% else %}
-    <div class="figure-placeholder">Figure coming soon.</div>
-    {% endif %}
-
     {% case line.id %}
     {% when "minerals" %}
     <p><strong>The question.</strong> Global demand scenarios are abstract; mines are not. How does projected demand for lithium, copper, nickel, and graphite translate into actual mine openings and expansions — where, when, at what scale, and with what consequences for the countries that hold the reserves? And who is exposed when supply falls short?</p>
@@ -102,6 +89,19 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
 
     <p><strong>How I approach it.</strong> Life cycle assessment, with an emphasis on systematically reviewing and harmonizing the existing literature: putting published values on a common basis to separate genuine differences between technologies from differences in methodological choices. I pair this with policy analysis — reviewing the evidence on which technical and policy levers (e.g., public procurement and performance-based standards for cement) can deliver reductions — and with fleet-level life cycle models to assess the full emissions impact of transitions such as vehicle electrification.</p>
     {% endcase %}
+
+    {% if line.image and line.image != "" %}
+    <figure class="research-line__figure">
+      {% if line.image_link and line.image_link != "" %}
+      <a class="figure-link" href="{{ line.image_link }}" title="Open the paper this figure comes from"><img src="{{ line.image | relative_url }}" alt="{{ line.image_alt }}"><span class="figure-link__badge">Paper ↗</span></a>
+      {% else %}
+      <img src="{{ line.image | relative_url }}" alt="{{ line.image_alt }}">
+      {% endif %}
+      <figcaption>{{ line.image_caption }}{% if line.image_credit and line.image_credit != "" %} — {{ line.image_credit }}{% endif %}{% if line.image_link and line.image_link != "" %} <a href="{{ line.image_link }}">Read the paper</a>.{% endif %}</figcaption>
+    </figure>
+    {% else %}
+    <div class="figure-placeholder">Figure coming soon.</div>
+    {% endif %}
 
     {% comment %} Sort: journals in _data/journal_rank.yml order (highest first,
     newest first within a journal), then any unlisted journal, newest first. {% endcomment %}
