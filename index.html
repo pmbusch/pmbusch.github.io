@@ -19,6 +19,7 @@ description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Ca
 
   <div class="link-row">
     {% for link in site.data.profile.links %}
+    {% if link.url == "" %}{% continue %}{% endif %}
     <a href="{{ link.url }}" class="icon-link">
       {% include icon.html name=link.icon %}
       <span>{{ link.label }}</span>
@@ -27,8 +28,8 @@ description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Ca
   </div>
 
   <div class="bio">
-    <p>I am an Assistant Professor at Pontificia Universidad Católica de Chile, in <a href="https://www.ing.uc.cl/ingenieria-y-gestion-construccion/">Civil Engineering</a> and in the <a href="https://desarrollosustentable.uc.cl/">Institute for Sustainable Development</a>.</p>
-    <p>My research starts from one premise: the energy transition is, above all, a materials problem.</p>
+    <p>I am an Assistant Professor at Pontificia Universidad Católica de Chile, in <a href="https://www.ing.uc.cl/ingenieria-y-gestion-construccion/">Civil Engineering</a> and in the <a href="https://desarrollosustentable.uc.cl/equipo/pablo-busch/">Institute for Sustainable Development</a>.</p>
+    <p>My research starts from one premise: <strong>the energy transition is, above all, a materials problem.</strong></p>
     <p>I build quantitative models to understand our future material needs, how circularity can reduce that demand, and who bears the environmental and health costs in a clean energy future.</p>
     <p>My goal is to provide qualitative recommendations towards a sustainable energy transition.</p>
   </div>
@@ -62,8 +63,16 @@ description: "Pablo Busch is an Assistant Professor at Pontificia Universidad Ca
         {{ card_img }}
         {% endif %}
       </div>
+      {% if line.card_caption and line.card_caption != "" and card_img != "" %}
+      <p class="line-card__caption">{{ line.card_caption }}</p>
+      {% endif %}
       <div class="line-card__body">
-        {% if featured %}
+        {% if line.featured_pub %}
+        <p class="line-card__featured">
+          <span class="line-card__featured-label">Selected publication</span>
+          <a href="{{ line.featured_pub.url }}">{{ line.featured_pub.title }}</a> — {{ line.featured_pub.venue }}, {{ line.featured_pub.year }}
+        </p>
+        {% elsif featured %}
         <p class="line-card__featured">
           <span class="line-card__featured-label">Selected publication</span>
           <a href="{{ featured.doi_url }}">{{ featured.title }}</a> — {{ featured.venue }}, {{ featured.year }}

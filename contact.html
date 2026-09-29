@@ -20,9 +20,9 @@ description: "Join Pablo Busch's research group at Pontificia Universidad Catól
     {% endcase %}
     <li style="--item-color: var(--line-{{ line.id }});">{{ emoji }} <strong>{{ line.label }}:</strong>
       {% case line.id %}
-        {% when "minerals" %}how mineral demand translates into specific mines, places, and times.
-        {% when "circular" %}how much material demand can be avoided through efficiency, longevity, and recovery.
-        {% when "health" %}where the environmental and health costs land, and on whom.
+        {% when "minerals" %}how global mineral demand translates into mining expansion, and its local environmental impacts.
+        {% when "circular" %}how much future material demand can be avoided through efficiency, lifetime extension, second life, and end-of-life recovery.
+        {% when "health" %}where the environmental costs of our energy and material consumption land, on whom, and to what degree.
         {% when "decarb" %}policies and life cycle emissions for hard-to-abate sectors.
       {% endcase %}
     </li>
@@ -43,7 +43,7 @@ description: "Join Pablo Busch's research group at Pontificia Universidad Catól
     <dt>Links</dt>
     <dd>
       {% for link in site.data.profile.links %}
-        {% unless link.label == "Email" %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endunless %}
+        {% unless link.label == "Email" or link.url == "" %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endunless %}
       {% endfor %}
     </dd>
   </dl>

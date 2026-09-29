@@ -35,17 +35,20 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
     its question/approach paragraphs were drafted later from its publications.
   -->
 
+  {% comment %} Counts and per-line lists cover scientific articles only;
+  reports stay on the Publications page. {% endcomment %}
+  {% assign articles = site.data.publications | where: "type", "article" %}
   {% assign max_line_count = 1 %}
   {% for line in site.data.research_lines %}
-    {% assign c = site.data.publications | where_exp: "item", "item.lines contains line.id" | size %}
+    {% assign c = articles | where_exp: "item", "item.lines contains line.id" | size %}
     {% if c > max_line_count %}{% assign max_line_count = c %}{% endif %}
   {% endfor %}
 
   <div class="research-grid">
     <nav class="research-outline" aria-label="Jump to a research line">
-      <p class="research-outline__label">Publications per line</p>
+      <p class="research-outline__label">Scientific articles per line</p>
       {% for line in site.data.research_lines %}
-        {% assign count = site.data.publications | where_exp: "item", "item.lines contains line.id" | size %}
+        {% assign count = articles | where_exp: "item", "item.lines contains line.id" | size %}
         {% comment %} Heat is kept in a 15-40% range (not 0-100%) so the tinted
         background never gets saturated enough to hurt text contrast. {% endcomment %}
         {% assign heat = count | times: 25 | divided_by: max_line_count | plus: 15 %}
@@ -101,8 +104,8 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
     {% endcase %}
 
     {% comment %} Sort: journals in _data/journal_rank.yml order (highest first,
-    newest first within a journal), then anything unlisted (reports), newest first. {% endcomment %}
-    {% assign line_all = site.data.publications | where_exp: "item", "item.lines contains line.id" | sort: "year" | reverse %}
+    newest first within a journal), then any unlisted journal, newest first. {% endcomment %}
+    {% assign line_all = articles | where_exp: "item", "item.lines contains line.id" | sort: "year" | reverse %}
     {% assign ranked_names = site.data.journal_rank | map: "name" %}
     {% assign line_pubs = "" | split: "" %}
     {% for j in site.data.journal_rank %}
@@ -114,7 +117,7 @@ description: "Pablo Busch's research lines: energy transition minerals, circular
     {% endfor %}
     {% if line_pubs.size > 0 %}
     <details class="pub-toggle" style="--line-color: var(--line-{{ line.id }});">
-      <summary>Publications in this line <span class="pub-toggle__count">{{ line_pubs.size }}</span></summary>
+      <summary>Scientific articles in this line <span class="pub-toggle__count">{{ line_pubs.size }}</span></summary>
       <ul class="pub-compact-list">
         {% for pub in line_pubs %}
           {% include pub-compact.html pub=pub %}

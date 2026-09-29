@@ -8,7 +8,7 @@ avatar: "/images/avatar.jpg"
 
 # Extra lines under the title on the home page (HTML allowed, for links).
 credentials:
-  - 'Ph.D. <a href="https://energy.ucdavis.edu/education/energy-graduate-group/">Energy Systems</a> and M.Sc. Statistics &amp; <a href="https://epm.ucdavis.edu/people/pablo-busch">Environmental Policy</a>, UC Davis'
+  - 'Ph.D. <a href="https://energy.ucdavis.edu/education/energy-graduate-group/">Energy Systems</a> and M.Sc. Statistics &amp; Environmental Policy, UC Davis'
   - 'Former Postdoc, <a href="https://sustainablesolutions.stanford.edu/">Sustainable Solutions Lab</a>, Stanford Doerr School of Sustainability'
 
 # Google Scholar doesn't offer a public API and blocks most automated
@@ -31,6 +31,11 @@ links:
   - label: "ORCID"
     url: "https://orcid.org/0000-0002-9069-1401"
     icon: orcid
+  # TODO: paste the Web of Science researcher profile URL. Links with an empty
+  # url are skipped, so this stays hidden until it is filled in.
+  - label: "Web of Science"
+    url: ""
+    icon: wos
   - label: "GitHub"
     url: "https://github.com/pmbusch"
     icon: github

@@ -6,7 +6,7 @@
 - id: minerals
   label: "Energy transition minerals"
   short_label: "Minerals" # used where space is tight (publications Venn diagram)
-  description: "How global demand for energy transition minerals (e.g., lithium, copper) translates into specific mines, in specific places, at specific times."
+  description: "How global demand for energy transition minerals (e.g., lithium, copper) translates into mining expansion, and the local environmental impacts of that expansion."
   color: "#a1560c"
   image: "/images/research/minerals-map.webp"
   card_image: "/images/research/minerals-map-card.webp" # home-page version (panel a only), from 1-Map_minerals-home.png
@@ -14,11 +14,19 @@
   image_alt: "World map of copper, cobalt, lithium, and nickel resource sites, colored by regional water stress, with zoomed-in panels for each mineral."
   image_caption: "Global mine sites and reserves for copper, cobalt, lithium, and nickel, overlaid with regional water stress. Figure from a preprint on Research Square."
   image_credit: ""
+  card_caption: "Battery mineral resources and their intersection with water-stressed basins." # short caption under the home-page figure
+  # Overrides the home-page "Selected publication" (otherwise picked from
+  # publications.yml). TODO: replace the title with the preprint's exact title.
+  featured_pub:
+    title: "Battery mineral resources and water stress (preprint)"
+    url: "https://www.researchsquare.com/article/rs-11011048/v1"
+    venue: "Research Square"
+    year: 2026
 
 - id: circular
   label: "Circular economy"
   short_label: "Circular economy" # used where space is tight (publications Venn diagram)
-  description: "How much of our material demand can be avoided through system improvements, efficiency gains, longevity extension and recovery at end-of-life."
+  description: "How much of our future material demand can be avoided through system improvements, such as efficiency gains, lifetime extension, second life, and recovery at end-of-life."
   color: "#127038"
   image: "/images/research/circular-recycling-capacity.webp"
   card_image: "" # same figure on the home page
@@ -26,18 +34,20 @@
   image_alt: "Line chart of net battery pre-processing capacity in North America from 2025 to 2050 under scenarios such as reference, recycling, repurposing, long and short battery life, and LFP chemistry, showing growing undercapacity in all scenarios after about 2030."
   image_caption: "Net battery pre-processing capacity in North America under shifting demand and circularity strategies. Figure from Busch et al. (2026), Resources, Conservation and Recycling."
   image_credit: ""
+  card_caption: "Battery recycling capacity deficit in North America under different circular economy levers."
 
 - id: health
   label: "Environmental impacts and public health"
   short_label: "Health" # used where space is tight (publications Venn diagram)
-  description: "Where the costs of these systems land, and on whom."
+  description: "Where the environmental costs of our energy and material consumption land, on whom, and to what degree."
   color: "#c2255c"
   image: "/images/research/health-pm25-mortality.webp"
   card_image: "" # same figure on the home page
   image_link: "https://doi.org/10.1038/s43247-024-01634-x"
   image_alt: "Map of mean PM2.5 concentration across Chilean regions next to a forest plot of the percentage change in monthly mortality for a 10 micrograms per cubic meter increase in PM2.5, by region."
-  image_caption: "Figure from Busch et al. (2024), Communications Earth & Environment, CC BY 4.0."
+  image_caption: "Empirical mortality effect of increased PM2.5 exposure for the elderly (75+) across Chilean regions. Figure from Busch et al. (2024), Communications Earth & Environment, CC BY 4.0."
   image_credit: ""
+  card_caption: "Empirical mortality effect of increased PM2.5 exposure for the elderly (75+)."
 
 - id: decarb
   label: "Decarbonization and life cycle assessment"
@@ -50,3 +60,4 @@
   image_alt: "Dot plot comparing hydrogen production carbon intensity across pathways — steam reforming, coal and biomass gasification, electrolysis, and thermal water splitting — in grams CO2-equivalent per megajoule of hydrogen."
   image_caption: "Retrieved literature values for carbon intensity of different hydrogen production pathways. Figure from Busch, Kendall & Lipman (2023), Renewable and Sustainable Energy Reviews."
   image_credit: ""
+  card_caption: "Carbon intensity of different hydrogen production pathways."
